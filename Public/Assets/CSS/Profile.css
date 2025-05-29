@@ -1,0 +1,26 @@
+body {
+  background-color: var(--putih);
+  font-family: 'Poppins', sans-serif;
+}
+
+h2, h5 {
+  color: var(--putih);
+}
+
+.bg-dark {
+  background-color: var(--hijau-tua) !important;
+}
+
+.sidebar {
+  background-color: var(--hijau-tua);
+  color: var(--putih);
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.side { /* ini bikin aku stress gimana cara kasihh marginn cok*/
+    text-align: left;
+    margin-left: 25px;
+}

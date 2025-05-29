@@ -20,7 +20,9 @@ h2, h5 {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-.side { /* ini bikin aku stress gimana cara kasihh marginn cok*/
+.side { 
     text-align: left;
     margin-left: 25px;
 }
+
+

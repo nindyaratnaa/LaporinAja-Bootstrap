@@ -32,60 +32,63 @@
     </div>
   </nav>
 
- <!-- Main Content -->
-<div class="container my-5">
-  <div class="card shadow-lg p-4 rounded">
-    <h2 class="text-center mb-4">Sampaikan Laporan Anda</h2>
-    <form>
-      <div class="form-group mb-3">
-        <label for="kategori">Pilih Kategori Laporan</label>
-        <select class="form-control" id="kategori">
-          <option disabled selected>Kategori Laporan</option>
-          <option>...</option>
-        </select>
+<!-- Main Content -->
+  <div class="container my-5">
+    <div class="card shadow-lg rounded custom-card">
+      <div class="card-header text-white text-center py-3 custom-card-header">
+        <h2 class="mb-0">Sampaikan Laporan Anda</h2>
       </div>
-      <div class="form-group mb-3">
-        <label for="judul">Judul Laporan</label>
-        <input type="text" class="form-control" id="judul" placeholder="Masukkan judul laporan"/>
+      <div class="card-body p-4">
+        <form>
+          <div class="form-group mb-3">
+            <label for="kategori">Pilih Kategori Laporan</label>
+            <select class="form-control" id="kategori">
+              <option disabled selected>Kategori Laporan</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group mb-3">
+            <label for="judul">Judul Laporan</label>
+            <input type="text" class="form-control" id="judul" placeholder="Masukkan judul laporan"/>
+          </div>
+          <div class="form-group mb-3">
+            <label for="deskripsi">Deskripsi Laporan</label>
+            <textarea class="form-control" id="deskripsi" rows="4" placeholder="Deskripsikan laporan Anda secara lengkap dan jelas"></textarea>
+          </div>
+          <div class="form-group mb-3">
+            <label for="tanggal">Tanggal Laporan</label>
+            <input type="date" class="form-control" id="tanggal"/>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="kecamatan">Pilih Kecamatan</label>
+              <select class="form-control" id="kecamatan">
+                <option disabled selected>Pilih Kecamatan</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="kelurahan">Pilih Kelurahan/Desa</label>
+              <select class="form-control" id="kelurahan">
+                <option disabled selected>Pilih Kelurahan/Desa</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="bukti">Unggah Bukti Laporan</label>
+            <input type="file" class="form-control-file" id="bukti"/>
+            <small class="form-text text-muted">Taruh atau Unggah Bukti Laporan di sini</small>
+          </div>
+          <div class="form-check mb-4">
+            <input type="checkbox" class="form-check-input" id="rahasia"/>
+            <label class="form-check-label" for="rahasia">Tandai sebagai laporan rahasia</label>
+          </div>
+          <button type="submit" class="btn btn-custom w-100 py-2">Lapor</button>
+        </form>
       </div>
-      <div class="form-group mb-3">
-        <label for="deskripsi">Deskripsi Laporan</label>
-        <textarea class="form-control" id="deskripsi" rows="4" placeholder="Deskripsikan laporan Anda secara lengkap dan jelas"></textarea>
-      </div>
-      <div class="form-group mb-3">
-        <label for="tanggal">Tanggal Laporan</label>
-        <input type="date" class="form-control" id="tanggal"/>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <label for="kecamatan">Pilih Kecamatan</label>
-          <select class="form-control" id="kecamatan">
-            <option disabled selected>Pilih Kecamatan</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-md-6 mb-3">
-          <label for="kelurahan">Pilih Kelurahan/Desa</label>
-          <select class="form-control" id="kelurahan">
-            <option disabled selected>Pilih Kelurahan/Desa</option>
-            <option>...</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-group mb-3">
-        <label for="bukti">Unggah Bukti Laporan</label>
-        <input type="file" class="form-control-file" id="bukti"/>
-        <small class="form-text text-muted">Taruh atau Unggah Bukti Laporan di sini</small>
-      </div>
-      <div class="form-check mb-4">
-        <input type="checkbox" class="form-check-input" id="rahasia"/>
-        <label class="form-check-label" for="rahasia">Tandai sebagai laporan rahasia</label>
-      </div>
-      <button type="submit" class="btn btn-danger w-100 py-2">Lapor</button>
-    </form>
+    </div>
   </div>
-</div>
-
     <!-- Tahapan Proses -->
     <section class="steps-section">
   <div class="container">

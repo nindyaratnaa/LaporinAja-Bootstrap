@@ -1,38 +1,27 @@
-/* ================== Global Styles ================== */
+/* ============ Custom Styles for Laporin Aja ============ */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
-  margin: 0;
-  padding: 0;
+  background-color: #FFFCF5; /* Background belakang card */
 }
 
-h1, h2, h4 {
-  font-weight: bold;
-  color: #343a40;
+.custom-card-header {
+  background-color: #B0323A; /* Header atas card */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
-/* ================== Navbar ================== */
-.navbar {
-  background-color: #212529 !important;
+.btn-custom {
+  background-color: #2B3537; /* Tombol "Lapor" */
+  border-color: #2B3537;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.navbar-brand img {
-  height: 40px;
+.btn-custom:hover {
+  background-color: #1f2627;
+  border-color: #1f2627;
 }
-
-.navbar-nav .nav-link {
-  color: #ffffff !important;
-  font-weight: 500;
-  margin-right: 15px;
-  transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #ffc107 !important;
-}
-
-/* ================== Form Section ================== */
 .container form {
   background-color: #ffffff;
   padding: 30px;
@@ -130,63 +119,4 @@ textarea {
 .step p {
   font-size: 0.95rem;
   color: #555;
-}
-
-/* ================== Footer ================== */
-footer {
-  background-color: #212529;
-  color: #ffffff;
-  padding: 40px 20px 20px;
-}
-
-footer h6 {
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer ul li {
-  margin-bottom: 8px;
-  font-size: 0.95rem;
-}
-
-footer .d-flex img {
-  transition: transform 0.2s ease;
-  cursor: pointer;
-}
-
-footer .d-flex img:hover {
-  transform: scale(1.1);
-}
-
-footer hr {
-  border-top: 1px solid #444;
-  margin: 20px 0;
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.875rem;
-}
-
-/* ================== Responsive ================== */
-@media (max-width: 768px) {
-  .navbar-nav {
-    text-align: center;
-  }
-
-  .steps-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info .row > div,
-  footer .row > div {
-    margin-bottom: 15px;
-    text-align: center;
-  }
 }

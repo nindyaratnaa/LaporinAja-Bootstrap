@@ -1,0 +1,192 @@
+/* ================== Global Styles ================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h4 {
+  font-weight: bold;
+  color: #343a40;
+}
+
+/* ================== Navbar ================== */
+.navbar {
+  background-color: #212529 !important;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* ================== Form Section ================== */
+.container form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #86b7fe;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* ================== Steps Section ================== */
+.steps-section {
+  background-color: #fef8ef;
+  padding: 60px 20px;
+}
+
+.steps-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  text-align: center;
+}
+
+.step {
+  max-width: 220px;
+  flex: 1;
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #fff;
+}
+
+.step-icon.bg-dark {
+  background-color: #212529;
+}
+
+.step-icon.bg-light {
+  background-color: #e5e5e5;
+  color: #212529;
+}
+
+.step h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ================== Footer ================== */
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+}
+
+footer h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+footer .d-flex img {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+footer .d-flex img:hover {
+  transform: scale(1.1);
+}
+
+footer hr {
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .steps-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info .row > div,
+  footer .row > div {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}

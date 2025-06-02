@@ -49,20 +49,20 @@
         </div>
     </nav> 
 
-    <!-- Tombol Buka Sidebar (Hanya muncul di mobile) -->
-    <button class="btn btn-dark m-3 d-md-none closed" onclick="toggleSidebar()">☰ Pengaturan</button>
+        <!-- Tombol Buka Sidebar (Hanya muncul di mobile) -->
+        <button class="btn btn-dark m-3 d-md-none closed" onclick="toggleSidebar()">☰ Pengaturan</button>
 
-    <!-- Sidebar -->
-    <div id="sidebar" class="d-md-block">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h4 class="mb-0">Pengaturan</h4>
-        <button class="btn btn-sm btn-close d-md-none" onclick="toggleSidebar()"></button>
-    </div>
-    <a href="#" class="text-white d-block mb-2">Akun</a>
-    <a href="#" class="text-white d-block mb-2">Notifikasi</a>
-    </div>
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-md-block">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mt-5 mb-3 fw-bold">Pengaturan</h4>
+                <button class="btn btn-sm btn-close d-md-none" onclick="toggleSidebar()"></button>
+            </div>
+            <a href="Pengaturan.html" class="nav-link aktif d-block mb-4">Akun</a>
+            <a href="#" class="nav-link d-block">Notifikasi</a>
+        </div>
 
-    <!-- Konten Form -->
+        <!-- Konten Form -->
         <div id="main-content" class="col-md-9 py-5 px-4">
             <h2 class="fw-bold mb-4">Akun</h2>
             <form class="w-100 w-md-75">
@@ -89,7 +89,6 @@
             </div>
             </form>
         </div>
-    </div>
 
     <script>
     function toggleSidebar() {

@@ -4,24 +4,6 @@
       background-color: #fff;
       color: #333;
     }
-    .navbar {
-      background-color: #004080;
-      padding: 15px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .navbar a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .navbar img.profile {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-    }
     .faq-container {
       max-width: 1000px;
       margin: 40px auto;

@@ -8,7 +8,7 @@ body {
     height: 70px;
 }
 
-.sidebar {
+/* .sidebar {
     background-color: var(--hijau-tua);
     height: 100vh;
     color: var(--putih);
@@ -31,7 +31,7 @@ body {
 }
 
 /* Sidebar Style */
-.sidebar {
+/* .sidebar {
   background-color: #2b3638;
   color: white;
 }
@@ -45,10 +45,10 @@ body {
 
 .sidebar a {
   color: rgb(0, 0, 0);
-}
+} */
 
 /* Agar sidebar tetap tampil di desktop dan offcanvas di mobile */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .offcanvas-md {
     position: static;
     transform: none;
@@ -66,20 +66,20 @@ body {
   .offcanvas-header {
     display: none;
   }
-}
+} */
 
 /* Pastikan sidebar memenuhi tinggi layar */
-.min-vh-100 {
+/* .min-vh-100 {
   min-height: 100vh;
-}
+} */ */
 
 /* Aktif link styling */
-.nav-link.active {
+/* .nav-link.active {
   background-color: white;
   color: black !important;
   border-radius: 8px;
   padding: 1rem 5rem;
-}
+} */
 
 .form-label {
     font-weight: 600;
@@ -104,4 +104,55 @@ body {
     border: 2px solid var(--gelap);
     background-color: white;
     color: var(--gelap);
+}
+
+
+
+#sidebar {
+  width: 250px;
+  max-width: 80%;
+  height: 100vh;
+  background-color: #343a40;
+  color: white;
+  padding: 1.5rem;
+  position: fixed;
+  top: 70px; /* Agar tidak tertutup navbar */
+  left: 0;
+  z-index: 1040;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+/* Sidebar tertutup */
+#sidebar.closed {
+  transform: translateX(-100%);
+}
+
+/* Tombol close hanya untuk mobile */
+#sidebar .btn-close {
+  background-color: white;
+  opacity: 1;
+}
+
+/* Konten utama default digeser saat sidebar muncul */
+#main-content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Sidebar tertutup, konten tidak digeser */
+#sidebar.closed + #main-content {
+  margin-left: 0 !important;
+}
+
+/* Mobile: konten tidak digeser dan sidebar menutupi sebagian */
+@media (max-width: 768px) {
+  #sidebar {
+    width: 100%;
+    max-width: 80%;
+  }
+
+  #main-content {
+    margin-left: 0 !important;
+  }
 }

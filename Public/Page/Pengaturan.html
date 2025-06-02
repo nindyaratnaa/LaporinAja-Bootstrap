@@ -22,16 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ajukan Laporan</a>
+                        <a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rekap</a>                    
+                        <a class="nav-link" href="Rekap.html">Rekap</a>                    
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pengaturan</a>
+                        <a class="nav-link" href="Pengaturan.html">Pengaturan</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Profile</a>
@@ -43,48 +43,27 @@
                     <!-- Gambar hanya di layar besar -->
                     <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
                     <!-- Teks hanya di layar kecil -->
-                    <span class="d-block d-lg-none text-white" href="Profile.html">Profile</span>
+                    <span class="d-block d-lg-none text-white">Profile</span>
                 </a>
             </div>
         </div>
     </nav> 
 
-    <!-- Main Content -->
-    <!-- Tombol toggle sidebar untuk layar kecil -->
-    <div class="d-block d-md-none p-3">
-    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
-        <i class="bi bi-list"></i> Menu Pengaturan
-    </button>
-    </div>
+<!-- Tombol Buka Sidebar (Hanya muncul di mobile) -->
+<button class="btn btn-dark m-3 d-md-none" onclick="toggleSidebar()">☰ Pengaturan</button>
 
-    <!-- Sidebar Offcanvas (Mobile) dan Tetap Statis di Layar Besar) -->
-    <div class="row">
-        <!-- Sidebar -->
-        <nav class="navbar navbar-expand-md bg-dark col-md-3 col-lg-2 min-vh-100 flex-md-column p-3">
-        <!-- Sidebar Header -->
-        <a class="navbar-brand text-white mb-4 d-flex justify-content-between align-items-center w-100" href="#">
-            <span>Pengaturan</span>
-            <!-- Tombol close hanya muncul di mobile -->
-            <button class="navbar-toggler d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="text-white fs-4">&times;</span>
-            </button>
-        </a>
-
-        <!-- Menu Collapse -->
-        <div class="collapse navbar-collapse" id="sidebarMenu">
-            <ul class="navbar-nav flex-column w-100">
-            <li class="nav-item mb-2">
-                <a class="nav-link text-white active" href="#">Akun</a>
-            </li>
-            <li class="nav-item mb-2">
-                <a class="nav-link text-white" href="#">Notifikasi</a>
-            </li>
-            </ul>
-        </div>
-        </nav>
+<!-- Sidebar -->
+<div id="sidebar" class="closed d-md-block">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h4 class="mb-0">Pengaturan</h4>
+    <button class="btn btn-sm btn-close d-md-none" onclick="toggleSidebar()"></button>
+  </div>
+  <a href="#" class="text-white d-block mb-2">Akun</a>
+  <a href="#" class="text-white d-block mb-2">Notifikasi</a>
+</div>
 
     <!-- Konten Form -->
-        <div class="col-md-9 py-5 px-4">
+        <div id="main-content" class="col-md-9 py-5 px-4">
             <h2 class="fw-bold mb-4">Akun</h2>
             <form class="w-100 w-md-75">
             <div class="mb-4">
@@ -111,5 +90,11 @@
             </form>
         </div>
     </div>
+
+    <script>
+    function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('closed');
+    }
+    </script>
 </body>
 </html>

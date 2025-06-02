@@ -43,6 +43,10 @@ h2, h5 {
     background-color: var(--hijau-tua) !important;
 }
 
+.bg-light {
+    background-color: var(--putih) !important;
+}
+
 /* .sidebar {
     background-color: var(--hijau-tua);
     color: var(--putih);

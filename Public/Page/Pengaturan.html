@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
         <div class="container-fluid">
-            <a class="navbar-brand me-4" href="Dashboard.html">
+            <a class="navbar-brand me-4" href="#">
                 <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ajukan Laporan</a>
+                        <a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rekap</a>                    
+                        <a class="nav-link" href="Rekap.html">Rekap</a>                    
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">FAQ</a>
@@ -49,20 +49,20 @@
         </div>
     </nav> 
 
-<!-- Tombol Buka Sidebar (Hanya muncul di mobile) -->
-<button class="btn btn-dark m-3 d-md-none" onclick="toggleSidebar()">☰ Pengaturan</button>
+        <!-- Tombol Buka Sidebar (Hanya muncul di mobile) -->
+        <button class="btn btn-dark m-3 d-md-none closed" onclick="toggleSidebar()">☰ Pengaturan</button>
 
-<!-- Sidebar -->
-<div id="sidebar" class="closed d-md-block">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <h4 class="mb-0">Pengaturan</h4>
-    <button class="btn btn-sm btn-close d-md-none" onclick="toggleSidebar()"></button>
-  </div>
-  <a href="#" class="text-white d-block mb-2">Akun</a>
-  <a href="#" class="text-white d-block mb-2">Notifikasi</a>
-</div>
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-md-block">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mt-5 mb-3 fw-bold">Pengaturan</h4>
+                <button class="btn btn-sm btn-close d-md-none" onclick="toggleSidebar()"></button>
+            </div>
+            <a href="Pengaturan.html" class="nav-link aktif d-block mb-4">Akun</a>
+            <a href="#" class="nav-link d-block">Notifikasi</a>
+        </div>
 
-    <!-- Konten Form -->
+        <!-- Konten Form -->
         <div id="main-content" class="col-md-9 py-5 px-4">
             <h2 class="fw-bold mb-4">Akun</h2>
             <form class="w-100 w-md-75">
@@ -89,7 +89,6 @@
             </div>
             </form>
         </div>
-    </div>
 
     <script>
     function toggleSidebar() {

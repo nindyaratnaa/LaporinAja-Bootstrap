@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riwayat Pengaduan</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../Assets/CSS/Profile.css"/>
+  <link rel="stylesheet" href="../Assets/globals.css" />
+  <link rel="stylesheet" href="../Assets/styleguide.css" />
+
+  <style>
+    body {
+      background-color: #F8F7F5;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .bg-dark-custom {
+      background-color: #2C3333;
+    }
+    .faq-title {
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: white;
+    }
+    .search-box {
+      border-radius: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #D9D9D9;
+    }
+    .card-faq {
+      background-color: #FDBD3D;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      height: 100%;
+      cursor: pointer;
+    }
+    .card-faq h5 {
+      font-weight: 700;
+    }
+
+    .icon-kategori {
+      width: 1.8rem;  
+      height: auto;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .footer {
+      background-color: #2C3333;
+      color: white;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .icon-circle {
+      font-size: 1.4rem;
+      margin-right: 0.5rem;
+    }
+    .list-group-item {
+      cursor: pointer;
+    }
+
+    /* Timeline Style for Steps */
+    .faq-step {
+      position: relative;
+      padding-left: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .faq-step i {
+      position: absolute;
+      left: 0;
+      top: 0.15rem;
+      background-color: #FDBD3D;
+      color: white;
+      border-radius: 50%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    .faq-step::before {
+      content: "";
+      position: absolute;
+      left: 0.75rem;
+      top: 2rem;
+      height: 100%;
+      width: 2px;
+      background-color: #FDBD3D;
+    }
+    .faq-step:last-child::before {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand me-4" href="#">
+        <a href="../Page/Dashboard.html" class="nav-link">
+          <span class="d-block d-lg-none text-white"></span>
+          <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40">
+        </a>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../Page/AjukanLaporan.html">Ajukan Laporan</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Page/Rekap.html">Rekap</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Page/FAQ.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Page/Pengaturan.html">Pengaturan</a></li>
+        </ul>
+        <a href="../Page/Profile.html" class="nav-link">
+          <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
+          <span class="d-block d-lg-none text-white">Profile</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-dark-custom text-center py-5">
+    <div class="text-center mb-4">
+      <img src="../Assets/Images/svg/judul-FAQ.svg" alt="FAQ Title" class="img-fluid">
+    </div>
+    <div class="container">
+      <div class="mx-auto" style="max-width: 600px;">
+        <div class="input-group search-box">
+          <input type="text" id="faqSearch" class="form-control border-0 bg-transparent" placeholder="Mencari pertanyaan...">
+          <span class="input-group-text bg-transparent border-0"><i class="fas fa-search"></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <section class="py-5">
+    <div class="container">
+      <!-- <div class="bg-white p-4 shadow rounded-4 mb-5">
+        <h4 class="fw-bold mb-4">Langkah Melapor</h4>
+        <div class="faq-step">
+          <i class="fas fa-pen"></i>
+          <div><strong>Langkah 1:</strong> Klik menu "Ajukan Laporan"</div>
+        </div>
+        <div class="faq-step">
+          <i class="fas fa-edit"></i>
+          <div><strong>Langkah 2:</strong> Isi formulir laporan sesuai kategori</div>
+        </div>
+        <div class="faq-step">
+          <i class="fas fa-paper-plane"></i>
+          <div><strong>Langkah 3:</strong> Kirim laporan dan tunggu notifikasi status</div>
+        </div>
+      </div> -->
+
+      <!-- FAQ Terbaru -->
+      <div class="bg-white p-4 shadow rounded-4 mb-5">
+        <h4 class="fw-bold mb-4">Terbaru</h4>
+        <ul class="list-group list-group-flush" id="faqList">
+          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='faq-detail1.html'">Bagaimana cara melapor di Laporin Aja? <i class="fas fa-chevron-right"></i></li>
+          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='faq-detail2.html'">Apakah laporan bisa dikirim secara anonim? <i class="fas fa-chevron-right"></i></li>
+          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='FAQ_JenisPermasalahan.html'">Apa saja jenis laporan yang bisa saya buat? <i class="fas fa-chevron-right"></i></li>
+          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='faq-detail4.html'">Berapa lama laporan diproses? <i class="fas fa-chevron-right"></i></li>
+          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='faq-detail5.html'">Bagaimana cara cek status laporan saya? <i class="fas fa-chevron-right"></i></li>
+        </ul>
+      </div>
+
+      <!-- Kategori FAQ -->
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-faq" onclick="location.href='FAQ_TentangLayanan.html'">
+            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-tentang-layanan.svg"> Tentang layanan</h5>
+            <ul class="mt-3">
+              <li>Tujuan platform ini <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Layanan bagi pengguna <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Akses 24 jam? <i class="fas fa-chevron-right float-end"></i></li>
+            </ul>
+            <p class="mt-3">6 Pertanyaan lainnya</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-faq" onclick="location.href='FAQ_ProsesPengaduan.html'">
+            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-pengaduan.svg"> Proses pengaduan</h5>
+            <ul class="mt-3">
+              <li>Prosedur mengajukan pengaduan <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Jenis masalah yang bisa dilaporkan <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Pihak yang menangani laporan <i class="fas fa-chevron-right float-end"></i></li>
+            </ul>
+            <p class="mt-3">9 Pertanyaan lainnya</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-faq" onclick="location.href='FAQ_KendalaTeknis.html'">
+            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-kendala-teknis.svg"> Kendala teknis</h5>
+            <ul class="mt-3">
+              <li>Platform tidak dapat diakses <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Bug atau kesalahan teknis <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Bantuan mengisi formulir <i class="fas fa-chevron-right float-end"></i></li>
+            </ul>
+            <p class="mt-3">6 Pertanyaan lainnya</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-faq" onclick="location.href='FAQ_CaraLapor.html'">
+            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-cara-melapor.svg"> Cara Melapor</h5>
+            <ul class="mt-3">
+              <li>Langkah pertama membuat laporan <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Informasi yang perlu disertakan <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Setelah laporan dikirim <i class="fas fa-chevron-right float-end"></i></li>
+            </ul>
+            <p class="mt-3">6 Pertanyaan lainnya</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-faq" onclick="location.href='FAQ_PrivasiPengguna.html'">
+            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-privasi.svg"> Privasi pengguna</h5>
+            <ul class="mt-3">
+              <li>Informasi yang dikumpulkan <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Kegunaan data pengguna <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Pembagian data ke pihak ketiga <i class="fas fa-chevron-right float-end"></i></li>
+            </ul>
+            <p class="mt-3">6 Pertanyaan lainnya</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-faq" onclick="location.href='FAQ_TanggungJawab.html'">
+            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-tanggungjawab.svg"> Tanggung jawab kami</h5>
+            <ul class="mt-3">
+              <li>Tindakan atas laporan palsu <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Tanggung jawab kebocoran data <i class="fas fa-chevron-right float-end"></i></li>
+              <li>Menangani keluhan pengguna <i class="fas fa-chevron-right float-end"></i></li>
+            </ul>
+            <p class="mt-3">6 Pertanyaan lainnya</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="../Assets/Images/img/logo-footer.png" alt="Logo Footer" class="mb-3" width="60">
+          <p class="fw-bold">Ikuti Kami!</p>
+          <div class="d-flex gap-3">
+            <img src="../Assets/Images/svg/x-logo.svg" alt="X Logo" width="24" />
+            <img src="../Assets/Images/svg/logo-instagram.svg" alt="Instagram" width="24" />
+            <img src="../Assets/Images/svg/logo-youtube.svg" alt="YouTube" width="24" />
+            <img src="../Assets/Images/svg/linkedin.svg" alt="LinkedIn" width="24" />
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Tentang Kami</h6>
+          <ul class="list-unstyled small">
+            <li>Profil Laporin Aja</li>
+            <li>Karier</li>
+            <li>Keamanan</li>
+            <li>Hubungi kami</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Tautan Lainnya</h6>
+          <ul class="list-unstyled small">
+            <li>Situs Resmi Pemkot Malang</li>
+            <li>Data Terbuka Kota Malang</li>
+            <li>PLN Pengaduan Malang</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <p class="text-center small">© 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang<br/>Dikelola oleh DPUPR Kota Malang | Terintegrasi dengan SIPPD Nasional</p>
+    </div>
+  </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById('faqSearch');
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    searchInput.addEventListener('input', function () {
+      const keyword = this.value.toLowerCase();
+
+      faqItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(keyword)) {
+          item.style.display = 'flex'; // Atau 'block' tergantung elemen
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,36 +1,41 @@
 /* ============ Custom Styles for Laporin Aja ============ */
 body {
-  background-color: #FFFCF5; /* Background belakang card */
+  background-color: #FFFCF5;
 }
 
 .custom-card-header {
-  background-color: #B0323A; /* Header atas card */
+  background-color: #B0323A;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  margin-bottom: 25px; /* Added margin */
 }
 
 .btn-custom {
-  background-color: #2B3537; /* Tombol "Lapor" */
+  background-color: #2B3537;
   border-color: #2B3537;
   color: white;
   font-weight: 600;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  margin-top: 25px; /* Added margin */
 }
 
 .btn-custom:hover {
   background-color: #1f2627;
   border-color: #1f2627;
 }
+
 .container form {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  margin: 30px auto; /* Added margin */
 }
 
 .form-group label {
   font-weight: 600;
+  margin-bottom: 10px; /* Added margin */
 }
 
 input[type="text"],
@@ -39,9 +44,9 @@ select,
 textarea {
   border-radius: 8px;
   border: 1px solid #ced4da;
-  padding: 10px;
+  padding: 12px; /* Slightly increased padding */
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Fixed and increased margin */
   transition: border-color 0.3s ease;
 }
 
@@ -55,6 +60,8 @@ textarea:focus {
 
 textarea {
   resize: none;
+  min-height: 120px; /* Added minimum height */
+  margin-bottom: 20px; /* Consistent margin */
 }
 
 .btn-danger {
@@ -64,12 +71,53 @@ textarea {
   padding: 10px 20px;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  margin-top: 20px; /* Added margin */
 }
 
 .btn-danger:hover {
   background-color: #c82333;
   border-color: #bd2130;
 }
+
+.steps-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 65px; /* sejajarkan dengan tengah ikon */
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+.step {
+  position: relative;
+  z-index: 2; /* agar ikon muncul di atas garis */
+  flex: 1;
+  max-width: 220px;
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #fff;
+  background-color: #e5e5e5;
+}
+
 
 /* ================== Steps Section ================== */
 .steps-section {

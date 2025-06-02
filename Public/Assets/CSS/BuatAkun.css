@@ -86,3 +86,45 @@ body {
 .btn-outline-light:hover {
     background-color: rgba(255,255,255,0.1);
 }
+
+
+
+
+/* Timeline container - add relative positioning */
+.timeline-steps {
+  position: relative;
+}
+
+/* Step items */
+.step {
+  position: relative;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/* Connecting line between steps */
+.step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 40px; /* Center of the icon */
+  left: 50%; /* Start from middle of current step */
+  right: -50%; /* Extend to middle of next step */
+  height: 2px;
+  background-color: #d3d3d3;
+  z-index: 0;
+}
+
+/* Icon styling - stays above the line */
+.step-icon {
+  position: relative;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid #d3d3d3; /* Optional border for the icon */
+}

@@ -6,7 +6,7 @@
     <title>Pengaturan Akun</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../Assets/CSS/Pengaturan.css"/>
+    <link rel="stylesheet" href="../Assets/CSS/PengaturanNotif.css"/>
     <link rel="stylesheet" href="../Assets/globals.css" />
     <link rel="stylesheet" href="../Assets/styleguide.css" />
 </head>
@@ -28,7 +28,7 @@
                         <a class="nav-link" href="Rekap.html">Rekap</a>                    
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Pengaturan.html">Pengaturan</a>
@@ -64,30 +64,39 @@
 
         <!-- Konten Form -->
         <div id="main-content" class="col-md-9 py-5 px-4">
-            <h2 class="fw-bold mb-4">Akun</h2>
-            <form class="w-100 w-md-75">
+            <h2 class="fw-bold mb-4">Notifikasi</h2>
             <div class="mb-4">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" id="username" class="form-control" placeholder="Masukkan username">
-            </div>
-            <div class="mb-4">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Masukkan email">
-            </div>
-            <div class="mb-4">
-                <label for="telp" class="form-label">No telepon</label>
-                <input type="tel" id="telp" class="form-control" placeholder="Masukkan no telepon">
-            </div>
-            <div class="mb-4">
-                <label for="password" class="form-label">Ubah kata sandi</label>
-                <input type="password" id="password" class="form-control" placeholder="Masukkan kata sandi baru">
+                <h5 class="fw-semibold">Pengaturan kanal notifikasi</h5>
+                <div class="form-check my-2">
+                <input class="form-check-input" type="checkbox" id="emailNotif" checked>
+                <label class="form-check-label" for="emailNotif">
+                    Kirim notifikasi melalui email
+                </label>
+                </div>
+                <div class="form-check my-2">
+                <input class="form-check-input" type="checkbox" id="waNotif" checked>
+                <label class="form-check-label" for="waNotif">
+                    Kirim notifikasi melalui nomor whatsapp
+                </label>
+                </div>
             </div>
 
-            <div class="d-flex gap-3 mt-4">
-                <button type="submit" class="btn btn-dark px-4">Simpan</button>
-                <button type="reset" class="btn btn-outline-dark px-4">Batalkan</button>
+            <div class="mb-4">
+                <h5 class="fw-semibold">Preferensi notifikasi</h5>
+                <div class="form-check my-2">
+                <input class="form-check-input" type="checkbox" id="selesaiNotif" checked>
+                <label class="form-check-label" for="selesaiNotif">
+                    Kirim notifikasi saat laporan selesai
+                </label>
+                </div>
+                <div class="form-check my-2">
+                <input class="form-check-input " type="checkbox" id="progressNotif" checked>
+                <label class="form-check-label" for="progressNotif">
+                    Aktifkan notifikasi untuk progres laporan
+                </label>
+                </div>
             </div>
-            </form>
+            </div>
         </div>
 
     <script>

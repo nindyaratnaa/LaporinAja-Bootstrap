@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Dashboard.css" />
     <link rel="stylesheet" href="../Assets/globals.css" />
     <link rel="stylesheet" href="../Assets/styleguide.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -87,7 +88,7 @@
             <p>Jalan Rusak</p>
           </div>
           <div class="col-md-3">
-            <h4>7+</h4>
+            <h4>7+</h4>++
             <p>Lampu Jalan Mati</p>
           </div>
           <div class="col-md-3">
@@ -104,8 +105,8 @@
 
     <!-- Statistik Pengaduan dengan Background Peta -->
     <section class="bg-light text-white position-relative" style="background: url('../Assets/Images/img/peta-dashboard.png') no-repeat center center; background-size: cover; min-height: 750; z-index: 0; padding-top: 650px;">
-      <div class="overlay position-absolute top-0 start-0 w-100 h-100" "></div>
-      <div class="container h-100 d-flex flex-column justify-content-center position-relative z-3">
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100" ></div>
+       <div class="container position-relative z-2 d-flex flex-column justify-content-center align-items-center" style="min-height: 750px;">
         <h2 class="display-5 fw-bold text-center">Total Pengaduan</h2>
         <h1 class="display-1 fw-bold text-center mt-4 mb-4">24++</h1>
       </div>
@@ -145,123 +146,170 @@
         </div>
         <div class="text-center mt-4">
           <h3 class="fw-bold text-white">Total Pengaduan: 24++</h3>
-        </div>
+      </div>
       </div> -->
     </section>
 
-    <!-- Cards Section (Floating Overlap Effect) -->
-<div class="container position-relative" style="margin-top: -100px; z-index: 10;">
-  <div class="row g-4 text-center">
-    
-    <div class="col-md-3">
-      <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
-        <div class="card-body d-flex flex-column justify-content-center">
-          <h4 class="card-title fw-bold display-4">10+</h4>
-          <p class="card-text fw-bold">Jalan Rusak</p>
+      <!-- Cards Section (Floating Overlap Effect) -->
+    <div class="container position-relative" style="margin-top: -100px; z-index: 10;">
+      <div class="row g-4 text-center">
+        
+        <div class="col-md-3">
+          <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h4 class="card-title fw-bold display-4">10+</h4>
+              <p class="card-text fw-bold">Jalan Rusak</p>
+            </div>
+          </div>
         </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h4 class="card-title fw-bold display-4">7+</h4>
+              <p class="card-text fw-bold">Lampu Jalan Mati</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h4 class="card-title fw-bold display-4">5+</h4>
+              <p class="card-text fw-bold">Drainase Tersumbat</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h4 class="card-title fw-bold display-4">11+</h4>
+              <p class="card-text fw-bold">Fasilitas Publik</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="col-md-3">
-      <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
-        <div class="card-body d-flex flex-column justify-content-center">
-          <h4 class="card-title fw-bold display-4">7+</h4>
-          <p class="card-text fw-bold">Lampu Jalan Mati</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-md-3">
-      <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
-        <div class="card-body d-flex flex-column justify-content-center">
-          <h4 class="card-title fw-bold display-4">5+</h4>
-          <p class="card-text fw-bold">Drainase Tersumbat</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
-        <div class="card-body d-flex flex-column justify-content-center">
-          <h4 class="card-title fw-bold display-4">11+</h4>
-          <p class="card-text fw-bold">Fasilitas Publik</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-    <!-- Pengumuman -->
     <section class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Pengumuman</h2>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <strong>Pemadaman Listrik Terjadwal – 20 Maret 2026:</strong>
-            Wilayah Sawojajar akan mengalami pemadaman pukul 10.00–14.00.
+      <div class="container bg-light">
+        <h2 class="text-center mb-4 fw-bold">Pengumuman</h2>
+        <ul class="list-group list-group-flush bg-light">
+
+          <!-- Pengumuman 1 -->
+          <li class="list-group-item bg-light d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img src="../Assets/Images/svg/speaker-merah.svg" alt="icon" style="width: 30px; height: 30px; margin-right: 15px;">
+              <div>
+                <div class="fw-bold">Pemadaman Listrik Terjadwal – 20 Maret 2026</div>
+                <small class="text-muted">Wilayah Sawojajar akan mengalami pemadaman pukul 10.00–14.00.</small>
+              </div>
+            </div>
+            <i class="bi bi-chevron-right mt-2"></i>
           </li>
-          <li class="list-group-item">
-            <strong>Aksi Demo – 24 April 2026:</strong>
-            Jalan Ijen akan ditutup sementara pukul 07.00–12.00.
+
+          <!-- Pengumuman 2 -->
+          <li class="list-group-item bg-light d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img src="../Assets/Images/svg/speaker-merah.svg" alt="icon" style="width: 30px; height: 30px; margin-right: 15px;">
+              <div>
+                <div class="fw-bold">Aksi Demo – 24 April 2026</div>
+                <small class="text-muted">Jalan Ijen akan ditutup sementara pukul 07.00–12.00.</small>
+              </div>
+            </div>
+            <i class="bi bi-chevron-right mt-2"></i>
           </li>
-          <li class="list-group-item">
-            <strong>Perbaikan Jalan – 22 April 2026:</strong>
-            Wilayah Lowokwaru ditutup untuk perbaikan drainase.
+
+          <!-- Pengumuman 3 -->
+          <li class="list-group-item bg-light d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img src="../Assets/Images/svg/speaker-merah.svg" alt="icon" style="width: 30px; height: 30px; margin-right: 15px;">
+              <div>
+                <div class="fw-bold">Perbaikan Jalan – 22 April 2026</div>
+                <small class="text-muted">Wilayah Lowokwaru ditutup untuk perbaikan drainase.</small>
+              </div>
+            </div>
+            <i class="bi bi-chevron-right mt-2"></i>
           </li>
-          <li class="list-group-item">
-            <strong>Gangguan Pasokan Air – 23 April 2026:</strong>
-            Kecamatan Blimbing terganggu akibat perbaikan pipa.
+
+          <!-- Pengumuman 4 -->
+          <li class="list-group-item bg-light d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img src="../Assets/Images/svg/speaker-merah.svg" alt="icon" style="width: 30px; height: 30px; margin-right: 15px;">
+              <div>
+                <div class="fw-bold">Gangguan Pasokan Air – 23 April 2026</div>
+                <small class="text-muted">Kecamatan Blimbing terganggu akibat perbaikan pipa.</small>
+              </div>
+            </div>
+            <i class="bi bi-chevron-right mt-2"></i>
           </li>
+
         </ul>
       </div>
     </section>
 
-    <!-- Tentang Kami -->
-    <section class="py-5">
-      <div class="container text-center">
-        <h2 class="mb-4">Tentang Kami</h2>
-        <p class="mb-2">
-          Laporin Aja dikembangkan oleh tim inovasi digital yang bekerja sama dengan DPUPR Kota Malang untuk memudahkan warga dalam pelaporan masalah infrastruktur.
-        </p>
-        <p>
-          Website ini memungkinkan pelaporan kerusakan jalan, lampu mati, saluran air tersumbat, dan lainnya secara cepat dan efisien.
-        </p>
-        <img src="../Assets/Images/img/logo-tentang-kami.png" alt="Logo Tentang Kami" height="120" class="mt-3" />
+      <!-- Tentang Kami -->
+    <section class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Konten Teks -->
+        <div class="col-md-6">
+          <h2 class="fw-bold">Tentang Kami</h2>
+          <h4 class="text-muted mb-4">Laporin Aja</h4>
+          <p>Laporin Aja dikembangkan oleh tim inovasi digital yang berkolaborasi dengan instansi pemerintah daerah Kota Malang, khususnya Dinas Pekerjaan Umum dan Penataan Ruang (DPUPR). Website ini berada di bawah pengawasan unit pengelola layanan publik berbasis digital yang bertujuan untuk meningkatkan keterlibatan warga dalam pelaporan dan pengawasan infrastruktur kota.</p>
+          <p>Laporin Aja berfungsi sebagai sistem informasi publik yang memungkinkan masyarakat Kota Malang untuk melaporkan kerusakan fasilitas umum seperti jalan berlubang, lampu jalan mati, saluran air tersumbat, dan fasilitas publik lainnya secara cepat dan mudah.</p>
+          <a class="btn btn-outline-dark mt-2" href="Masuk.html">Daftar</a>
+        </div>
+
+        <!-- Gambar / Vektor -->
+        <div class="col-md-6 text-center">
+          <img src="../Assets/Images/img/logo-tentang-kami.png" alt="Tugu Malang" class="img-fluid" style="max-height: 400px;">
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
+
 
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-5 pb-4">
-      <div class="container text-center text-md-start">
-        <div class="row text-center text-md-start">
-          <div class="col-md-3">
-            <h5 class="text-uppercase mb-4">Tentang Kami</h5>
-            <p>Profil Laporin Aja</p>
-            <p>Karier</p>
-            <p>Keamanan</p>
-            <p>Hubungi kami</p>
-          </div>
-          <div class="col-md-3">
-            <h5 class="text-uppercase mb-4">Tautan Lainnya</h5>
-            <p>Situs Resmi Pemkot Malang</p>
-            <p>Data Terbuka Kota Malang</p>
-            <p>PLN Pengaduan Malang</p>
-          </div>
-          <div class="col-md-6 text-center">
-            <h5 class="text-uppercase mb-4">Ikuti Kami</h5>
-            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i> Twitter</a>
-            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a>
-            <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i> YouTube</a>
-            <a href="#" class="text-white"><i class="bi bi-linkedin"></i> LinkedIn</a>
-          </div>
+    <footer class="bg-dark text-white pt-4 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="../Assets/Images/img/logo-footer.png" alt="Logo Footer" class="mb-3" width="60">
+                    <p class="fw-bold">Ikuti Kami!</p>
+                    <div class="d-flex gap-3">
+                        <img src="../Assets/Images/svg/x-logo.svg" alt="X Logo" width="24" />
+                        <img src="../Assets/Images/svg/logo-instagram.svg" alt="Instagram" width="24" />
+                        <img src="../Assets/Images/svg/logo-youtube.svg" alt="YouTube" width="24" />
+                        <img src="../Assets/Images/svg/linkedin.svg" alt="LinkedIn" width="24" />
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold">Tentang Kami</h6>
+                    <ul class="list-unstyled small">
+                        <li>Profil Laporin Aja</li>
+                        <li>Karier</li>
+                        <li>Keamanan</li>
+                        <li>Hubungi kami</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold">Tautan Lainnya</h6>
+                    <ul class="list-unstyled small">
+                        <li>Situs Resmi Pemkot Malang</li>
+                        <li>Data Terbuka Kota Malang</li>
+                        <li>PLN Pengaduan Malang</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="text-center small">© 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang<br/>Dikelola oleh DPUPR Kota Malang | Terintegrasi dengan SIPPD Nasional</p>
         </div>
-        <hr class="my-3" />
-        <div class="text-center">
-          <p class="mb-0">&copy; 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang. Dikelola oleh DPUPR | Terintegrasi dengan SIPPD Nasional.</p>
-        </div>
-      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -83,27 +83,27 @@ body {
 
 .form-label {
     font-weight: 600;
-    color: black;
+    color: var(--hijau-tua);
 }
 
 .form-control {
-    border: 2px solid black;
+    border: 2px solid var(--hijau-tua);
     border-radius: 8px;
 }
 
 .btn-simpan {
-    background-color: var(--gelap);
-    color: white;
+    background-color: var(--hijau-tua);
+    color: var(--putih);
 }
 
 .btn-simpan:hover {
-    background-color: #1f2525;
+    background-color: var(--hijau-tua);
 }
 
 .btn-batal {
-    border: 2px solid var(--gelap);
-    background-color: white;
-    color: var(--gelap);
+    border: 2px solid var(--hijau-tua);
+    background-color: var(--putih);
+    color: var(--hijau-tua);
 }
 
 
@@ -112,8 +112,8 @@ body {
   width: 250px;
   max-width: 80%;
   height: 100vh;
-  background-color: #343a40;
-  color: white;
+  background-color: var(--hijau-tua);
+  color: var(--putih);
   padding: 1.5rem;
   position: fixed;
   top: 70px; /* Agar tidak tertutup navbar */
@@ -123,14 +123,32 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Sidebar tertutup */
-#sidebar.closed {
-  transform: translateX(-100%);
+@media (max-width: 767.98px) {
+  #sidebar.closed {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  #sidebar {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+}
+
+/* Di layar besar, pastikan sidebar tampil normal */
+@media (min-width: 768px) {
+  #sidebar {
+    transform: none !important;
+  }
+}
+
+.nav-link.aktif {
+  text-decoration: underline;
 }
 
 /* Tombol close hanya untuk mobile */
 #sidebar .btn-close {
-  background-color: white;
+  background-color: var(--putih);
   opacity: 1;
 }
 
@@ -140,10 +158,10 @@ body {
   transition: margin-left 0.3s ease;
 }
 
-/* Sidebar tertutup, konten tidak digeser */
+/* Sidebar tertutup, konten tidak digeser
 #sidebar.closed + #main-content {
   margin-left: 0 !important;
-}
+} */
 
 /* Mobile: konten tidak digeser dan sidebar menutupi sebagian */
 @media (max-width: 768px) {

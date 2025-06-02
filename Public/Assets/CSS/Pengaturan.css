@@ -144,6 +144,8 @@ body {
 
 .nav-link.aktif {
   text-decoration: underline;
+  text-underline-offset: 6px;
+  /* letter-spacing: 0.5px; */
 }
 
 /* Tombol close hanya untuk mobile */

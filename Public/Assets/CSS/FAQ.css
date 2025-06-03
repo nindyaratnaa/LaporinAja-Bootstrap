@@ -68,6 +68,19 @@
     .list-group-item {
       cursor: pointer;
     }
+    .list-group-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 1rem;
+    }
+
+    .list-group-item i {
+      min-width: 16px;
+      text-align: right;
+    }
+
 
     /* Timeline Style for Steps */
     .faq-step {

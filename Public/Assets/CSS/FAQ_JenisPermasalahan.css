@@ -1,7 +1,7 @@
   body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff;
+      background-color: var(--putih);
       color: #333;
     }
     .faq-container {
@@ -57,7 +57,7 @@
     font-weight: bold;
   }
   .faq-related-box {
-    background-color: #FFBE55;
+    background-color: var(--kuning-muda);
     border-radius: 12px;
     padding: 24px;
     margin-top: 40px;
@@ -91,7 +91,7 @@
 
   /* Feedback box style */
   .faq-feedback-box {
-    background-color: #E6F0FF; /* Box besar */
+    background-color: var(--putih); /* Box besar */
     border-radius: 16px;
     padding: 32px 20px;
     margin-top: 40px;
@@ -139,42 +139,6 @@
 }
 
 .feedback-icon-img.clicked {
-  border: 2px solid #004080; 
+  border: 2px solid varlpmim(); 
   transform: scale(1.1);
 }
-
-    /* .footer {
-      background-color: #2C3333;
-      color: white;
-    }
-    .footer a {
-      color: white;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    } */
-
-    /* footer {
-      background-color: #f5f5f5;
-      padding: 40px;
-      margin-top: 60px;
-    }
-    footer .text-link-list,
-    footer .text-link-list-2 {
-      margin-bottom: 20px;
-    }
-    footer .text-strong-2,
-    footer .text-strong-3 {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    footer .list-item {
-      margin-bottom: 6px;
-      color: #555;
-    }
-    .footer-bottom {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #888;
-    } */

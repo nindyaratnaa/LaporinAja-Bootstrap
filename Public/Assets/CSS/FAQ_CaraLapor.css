@@ -1,6 +1,6 @@
 body {
       background-color: var(--putih);
-      font-family: 'Segoe UI', sans-serif;
+      font-family: var(--body-base-font-family);      
     }
     .bg-dark-custom {
       background-color: var(--hijau-tua);

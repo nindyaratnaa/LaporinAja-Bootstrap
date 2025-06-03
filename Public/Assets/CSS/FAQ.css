@@ -1,7 +1,8 @@
     body {
       background-color: var(--putih);
-      font-family: 'Segoe UI', sans-serif;
+      font-family: var(--body-base-font-family);
     }
+
     .bg-dark-custom {
       background-color: var(--hijau-tua);
     }
@@ -50,7 +51,7 @@
       vertical-align: middle;
     }
 
-    .footer {
+    /* .footer {
       background-color: var(--hijau-tua);
       color: var(--putih);
     }
@@ -60,7 +61,7 @@
     }
     .footer a:hover {
       text-decoration: underline;
-    }
+    } */
     .icon-circle {
       font-size: 1.4rem;
       margin-right: 0.5rem;
@@ -110,3 +111,4 @@
     .faq-step:last-child::before {
       display: none;
     }
+    

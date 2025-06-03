@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Pengaduan Kota Malang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Dashboard.css" />
+    <link rel="stylesheet" href="../Assets/globals.css" />
+    <link rel="stylesheet" href="../Assets/styleguide.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand me-4" href="Dashboard.html">
+                <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Rekap.html">Rekap</a>                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pengaturan.html">Pengaturan</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li> -->
+                </ul>
+
+                <!-- <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="ms-auto rounded-circle"> -->
+                <a href="Profile.html" class="nav-link">
+                    <!-- Gambar hanya di layar besar -->
+                    <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
+                    <!-- Teks hanya di layar kecil -->
+                    <span class="d-block d-lg-none text-white">Profile</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center bg-dark text-white py-5">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Website Pengaduan<br />Masyarakat Kota Malang</h1>
+        <p class="lead">Melakukan pelayanan demi kenyamanan</p>
+        <img src="../Assets/Images/img/bunderan.png" alt="Bunderan" class="img-fluid mt-4" style="max-height: 300px" />
+      </div>
+    </section>
+
+    <!-- Laporan Tuntas
+    <section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" style="margin: 4rem;">Laporan Tuntas</h2>
+    <div id="laporanCarousel" class="carousel slide" style="margin-top: 4rem;" data-bs-ride="carousel">
+      <div class="carousel-inner"> -->
+
+        <!-- Slide 1 -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Laporan Tuntas</h2>
+    <div id="laporanCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            
+            <!-- Kartu 1 -->
+            <div class="card text-white bg-warning me-3" style="width: 18rem; border-radius: 20px; overflow: hidden;">
+              <img src="../Assets/Images/img/pohon-kiri.png" class="card-img-top " style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Lampu Merah Pejalan Kaki di Sumbersari Mati</h5>
+                <p class="card-text">Lampu merah pejalan kaki di Sumbersari tidak berfungsi. Kondisi ini membahayakan keselamatan pengguna jalan, terutama di jam padat.</p>
+              </div>
+            </div>
+
+            <!-- Kartu 2 -->
+            <div class="card text-white bg-danger me-3" style="width: 18rem; border-radius: 20px; overflow: hidden;">
+              <img src="../Assets/Images/img/jalan-rusak-tengah.png" class="card-img-top mx-auto d-block " style="width: 70%; height: auto; margin-top: 20px;">
+              <div class="card-body text-center">
+                <h5 class="card-title">Trotoar Depan UB</h5>
+                <p class="card-text">Perbaikan trotoar di depan UB belum selesai. Warga berharap penyelesaian segera tuntas demi kenyamanan pejalan kaki.</p>
+              </div>
+            </div>
+
+            <!-- Kartu 3 -->
+            <div class="card text-white bg-warning" style="width: 18rem; border-radius: 20px; overflow: hidden;">
+              <img src="../Assets/Images/img/jalan-rusak-kanan.png" class="card-img-top" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Perbaikan Jalan Sumbersari</h5>
+                <p class="card-text">Proses perbaikan jalan telah selesai. Jalan yang rusak telah diperbaiki dan kembali layak digunakan.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tambahkan slide berikutnya jika perlu -->
+        
+      <!-- </div>
+    </div>
+  </div>
+</section> -->
+
+
+        <!-- Tambahkan slide lain jika perlu -->
+
+      </div>
+
+      <!-- Navigasi -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#laporanCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#laporanCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- Statistik Pengaduan -->
+    <!-- <section class="py-5">
+      <div class="container text-center">
+        <h2>Total Pengaduan</h2>
+        <h3 class="display-6 fw-bold">24++</h3>
+        <div class="row mt-4">
+          <div class="col-md-3">
+            <h4>10+</h4>
+            <p>Jalan Rusak</p>
+          </div>
+          <div class="col-md-3">
+            <h4>7+</h4>++
+            <p>Lampu Jalan Mati</p>
+          </div>
+          <div class="col-md-3">
+            <h4>5+</h4>
+            <p>Drainase Tersumbat</p>
+          </div>
+          <div class="col-md-3">
+            <h4>11+</h4>
+            <p>Fasilitas Publik</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Statistik Pengaduan dengan Background Peta -->
+    <section class="bg-light text-white position-relative" style="background: url('../Assets/Images/img/peta-dashboard.png') no-repeat center center; background-size: cover; min-height: 750; z-index: 0; padding-top: 650px;">
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100" ></div>
+       <div class="container position-relative z-2 d-flex flex-column justify-content-center align-items-center" style="min-height: 750px;">
+        <h2 class="display-5 fw-bold text-center">Total Pengaduan</h2>
+        <h1 class="display-1 fw-bold text-center mt-4 mb-4">24++</h1>
+      </div>
+        <!-- <div class="row g-4 text-center mt-3">
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm text-white bg-dark" style="min-height: 200px;">
+              <div class="card-body">
+                <h4 class="card-title fw-bold display-1">10+</h4>
+                <p class="card-text fw-bold">Jalan Rusak</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm text-white bg-dark" style="min-height: 200px;">
+              <div class="card-body">
+                <h4 class="card-title text-white fw-bold display-1">7+</h4>
+                <p class="card-text fw-bold">Lampu Jalan Mati</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm text-white bg-dark" style="min-height: 200px;">
+              <div class="card-body">
+                <h4 class="card-title text-white fw-bold display-1">5+</h4>
+                <p class="card-text fw-bold">Drainase Tersumbat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm text-white bg-dark" style="min-height: 200px;">
+              <div class="card-body">
+                <h4 class="card-title text-white fw-bold display-1">11+</h4>
+                <p class="card-text fw-bold">Fasilitas Publik</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <h3 class="fw-bold text-white">Total Pengaduan: 24++</h3>
+      </div>
+      </div> -->
+    </section>
+
+      <!-- Cards Section (Floating Overlap Effect) -->
+    <div class="container position-relative" style="margin-top: -150px; z-index: 10;">
+      <div class="row g-4 text-center">
+        
+        <div class="col-md-3">
+          <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h4 class="card-title fw-bold display-4">10+</h4>
+              <p class="card-text fw-bold">Jalan Rusak</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h4 class="card-title fw-bold display-4">7+</h4>
+              <p class="card-text fw-bold">Lampu Jalan Mati</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h4 class="card-title fw-bold display-4">5+</h4>
+              <p class="card-text fw-bold">Drainase Tersumbat</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-lg bg-dark text-white rounded-4" style="min-height: 220px;">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h4 class="card-title fw-bold display-4">11+</h4>
+              <p class="card-text fw-bold">Fasilitas Publik</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <section class="bg-light py-5">
+      <div class="container bg-light">
+        <h2 class="text-center mb-4 fw-bold" style="margin-top: 5rem;">Pengumuman</h2>
+        <ul class="list-group list-group-flush bg-light">
+
+          <!-- Pengumuman 1 -->
+          <li class="list-group-item bg-light d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img src="../Assets/Images/svg/speaker-merah.svg" alt="icon" style="width: 30px; height: 30px; margin-right: 15px;">
+              <div>
+                <div class="fw-bold">Pemadaman Listrik Terjadwal – 20 Maret 2026</div>
+                <small class="text-muted">Wilayah Sawojajar akan mengalami pemadaman pukul 10.00–14.00.</small>
+              </div>
+            </div>
+            <i class="bi bi-chevron-right mt-2"></i>
+          </li>
+
+          <!-- Pengumuman 2 -->
+          <li class="list-group-item bg-light d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img src="../Assets/Images/svg/speaker-merah.svg" alt="icon" style="width: 30px; height: 30px; margin-right: 15px;">
+              <div>
+                <div class="fw-bold">Aksi Demo – 24 April 2026</div>
+                <small class="text-muted">Jalan Ijen akan ditutup sementara pukul 07.00–12.00.</small>
+              </div>
+            </div>
+            <i class="bi bi-chevron-right mt-2"></i>
+          </li>
+
+          <!-- Pengumuman 3 -->
+          <li class="list-group-item bg-light d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img src="../Assets/Images/svg/speaker-merah.svg" alt="icon" style="width: 30px; height: 30px; margin-right: 15px;">
+              <div>
+                <div class="fw-bold">Perbaikan Jalan – 22 April 2026</div>
+                <small class="text-muted">Wilayah Lowokwaru ditutup untuk perbaikan drainase.</small>
+              </div>
+            </div>
+            <i class="bi bi-chevron-right mt-2"></i>
+          </li>
+
+          <!-- Pengumuman 4 -->
+          <li class="list-group-item bg-light d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img src="../Assets/Images/svg/speaker-merah.svg" alt="icon" style="width: 30px; height: 30px; margin-right: 15px;">
+              <div>
+                <div class="fw-bold">Gangguan Pasokan Air – 23 April 2026</div>
+                <small class="text-muted">Kecamatan Blimbing terganggu akibat perbaikan pipa.</small>
+              </div>
+            </div>
+            <i class="bi bi-chevron-right mt-2"></i>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+      <!-- Tentang Kami -->
+    <section class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Konten Teks -->
+        <div class="col-md-6">
+          <h2 class="fw-bold">Tentang Kami</h2>
+          <h4 class="text-muted mb-4">Laporin Aja</h4>
+          <p>Laporin Aja dikembangkan oleh tim inovasi digital yang berkolaborasi dengan instansi pemerintah daerah Kota Malang, khususnya Dinas Pekerjaan Umum dan Penataan Ruang (DPUPR). Website ini berada di bawah pengawasan unit pengelola layanan publik berbasis digital yang bertujuan untuk meningkatkan keterlibatan warga dalam pelaporan dan pengawasan infrastruktur kota.</p>
+          <p>Laporin Aja berfungsi sebagai sistem informasi publik yang memungkinkan masyarakat Kota Malang untuk melaporkan kerusakan fasilitas umum seperti jalan berlubang, lampu jalan mati, saluran air tersumbat, dan fasilitas publik lainnya secara cepat dan mudah.</p>
+          <a class="btn btn-outline-dark mt-2" href="Masuk.html">Daftar</a>
+        </div>
+        
+        <!-- Gambar / Vektor -->
+        <div class="col-md-6 text-center">
+          <img src="../Assets/Images/img/logo-tentang-kami.png" alt="Tugu Malang" class="img-fluid" style="max-height: 400px;">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="../Assets/Images/img/logo-footer.png" alt="Logo Footer" class="mb-3" width="60">
+                    <p class="fw-bold">Ikuti Kami!</p>
+                    <div class="d-flex gap-3">
+                        <img src="../Assets/Images/svg/x-logo.svg" alt="X Logo" width="24" />
+                        <img src="../Assets/Images/svg/logo-instagram.svg" alt="Instagram" width="24" />
+                        <img src="../Assets/Images/svg/logo-youtube.svg" alt="YouTube" width="24" />
+                        <img src="../Assets/Images/svg/linkedin.svg" alt="LinkedIn" width="24" />
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold">Tentang Kami</h6>
+                    <ul class="list-unstyled small">
+                        <li>Profil Laporin Aja</li>
+                        <li>Karier</li>
+                        <li>Keamanan</li>
+                        <li>Hubungi kami</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold">Tautan Lainnya</h6>
+                    <ul class="list-unstyled small">
+                        <li>Situs Resmi Pemkot Malang</li>
+                        <li>Data Terbuka Kota Malang</li>
+                        <li>PLN Pengaduan Malang</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="text-center small">© 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang<br/>Dikelola oleh DPUPR Kota Malang | Terintegrasi dengan SIPPD Nasional</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Pengaduan Kota Malang</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Dashboard.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Dashboard.css" />
     <link rel="stylesheet" href="../Assets/globals.css" />
     <link rel="stylesheet" href="../Assets/styleguide.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -44,39 +44,54 @@
 
     <!-- Laporan Tuntas -->
     <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Laporan Tuntas</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="../Assets/Images/img/pohon-kiri.png" class="card-img-top" alt="Laporan 1" />
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" style="margin: 4rem;">Laporan Tuntas</h2>
+    <div id="laporanCarousel" class="carousel slide" style="margin-top: 4rem;" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="card text-white bg-warning me-3" style="width: 18rem; border-radius: 20px;">
+              <img src="../Assets/Images/img/pohon-kiri.png" class="card-img-top" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
               <div class="card-body">
                 <h5 class="card-title">Lampu Merah Pejalan Kaki di Sumbersari Mati</h5>
-                <p class="card-text">Lampu merah di perempatan Sumbersari–Sigura-gura mati dan membahayakan penyebrang.</p>
+                <p class="card-text">Lampu merah pejalan kaki di Sumbersari tidak berfungsi. Kondisi ini membahayakan keselamatan pengguna jalan, terutama di jam padat.</p>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-danger">
-              <img src="../Assets/Images/img/jalan-rusak-tengah.png" class="card-img-top" alt="Laporan 2" />
+            <div class="card text-white bg-danger me-3" style="width: 18rem; border-radius: 20px;">
+              <img src="../Assets/Images/img/img-trotoar-rusak.png" class="card-img-top" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
               <div class="card-body">
                 <h5 class="card-title">Trotoar Depan UB</h5>
-                <p class="card-text">Progres signifikan, sebagian besar jalur telah dirapikan, namun masih ada yang belum selesai.</p>
+                <p class="card-text">Perbaikan trotoar di depan UB belum selesai. Warga berharap penyelesaian segera tuntas demi kenyamanan pejalan kaki.</p>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="../Assets/Images/img/jalan-rusak-tengah.png" class="card-img-top" alt="Laporan 3" />
+            <div class="card text-white bg-warning" style="width: 18rem; border-radius: 20px;">
+              <img src="../Assets/Images/img/jalan-rusak-kanan.png" class="card-img-top" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
               <div class="card-body">
                 <h5 class="card-title">Perbaikan Jalan Sumbersari</h5>
-                <p class="card-text">Jalan yang rusak sudah diperbaiki dan kembali layak dilalui.</p>
+                <p class="card-text">Proses perbaikan jalan telah selesai. Jalan yang rusak telah diperbaiki dan kembali layak digunakan.</p>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Tambahkan slide lain jika perlu -->
+
       </div>
-    </section>
+
+      <!-- Navigasi -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#laporanCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#laporanCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
 
     <!-- Statistik Pengaduan -->
     <!-- <section class="py-5">
@@ -152,7 +167,7 @@
     </section>
 
       <!-- Cards Section (Floating Overlap Effect) -->
-    <div class="container position-relative" style="margin-top: -100px; z-index: 10;">
+    <div class="container position-relative" style="margin-top: -150px; z-index: 10;">
       <div class="row g-4 text-center">
         
         <div class="col-md-3">
@@ -197,7 +212,7 @@
 
     <section class="bg-light py-5">
       <div class="container bg-light">
-        <h2 class="text-center mb-4 fw-bold">Pengumuman</h2>
+        <h2 class="text-center mb-4 fw-bold" style="margin-top: 5rem;">Pengumuman</h2>
         <ul class="list-group list-group-flush bg-light">
 
           <!-- Pengumuman 1 -->
@@ -314,6 +329,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

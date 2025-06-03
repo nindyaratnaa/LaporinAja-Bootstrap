@@ -1,9 +1,9 @@
 body {
   background-color: var(--putih);
-  font-family: var(--body-base-font-family);
+  /* font-family: var(--body-base-font-family);
   font-weight: var(--body-base-font-weight);
   font-size: var(--body-base-font-size);
-  line-height: var(--body-base-line-height);
+  line-height: var(--body-base-line-height); */
 }
 
 .custom-card-header {
@@ -69,7 +69,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.btn-danger {
+/* .btn-danger {
   background-color: #dc3545;
   border-color: #dc3545;
   font-weight: var(--body-strong-font-weight);
@@ -77,18 +77,18 @@ textarea {
   border-radius: var(--size-radius-200);
   transition: background-color 0.3s ease;
   margin-top: 20px;
-}
+} */
 
-.btn-danger:hover {
+/* .btn-danger:hover {
   background-color: #c82333;
   border-color: #bd2130;
-}
+} */
 
 /* ================== Steps Section ================== */
-.steps-section {
+/* .steps-section {
   background-color: var(--krem-muda); 
   padding: 60px 20px;
-}
+} */
 
 .steps-wrapper {
   position: relative;
@@ -129,10 +129,10 @@ textarea {
   color: #E3E3E3; 
 }
 
-.step-icon.bg-dark {
+/* .step-icon.bg-dark {
   background-color: var(--hijau-tua);
   color: var(--putih); 
-}
+} */
 
 .step-icon.bg-light {
   background-color: #e0e0e0 !important; 

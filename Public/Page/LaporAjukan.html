@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Laporin Aja</title>
+    <title>LaporinAja - Ajukan Laporan</title>
+    <!-- Favicon (ikon di tab browser) -->
+    <link rel="icon" href="../Assets/Images/img/nav-logo.png" type="image/png">
+
+    <!-- Open Graph (untuk preview saat link dibagikan di media sosial) -->
+    <meta property="og:image" content="../Assets/Images/img/nav-logo.png">    
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="../assets/globals.css"/>
   <link rel="stylesheet" href="../assets/styleguide.css"/>
@@ -12,28 +18,41 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
-    <div class="container-fluid">
-      <a class="navbar-brand me-4" href="DashboardLogin.html">
-        <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a></li>
-          <li class="nav-item"><a class="nav-link" href="Rekap.html">Rekap</a></li>
-          <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="Pengaturan.html">Pengaturan</a></li>
-        </ul>
-        <a href="Profile.html" class="nav-link">
-          <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
-          <span class="d-block d-lg-none text-white">Profile</span>
-        </a>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand me-4" href="DashboardLogin.html">
+                <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40">
+            </a>
+
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="LaporAjukan.html">Ajukan Laporan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Rekap.html">Rekap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pengaturan.html">Pengaturan</a>
+                </li>
+            </ul>
+
+            <a href="Profile.html" class="nav-link d-flex align-items-center">
+                <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
+                <span class="d-block d-lg-none" style="color: #adb5bd;">Profile</span>
+            </a>
+            </div>
+        </div>
+    </nav>
 
   <!-- Main Content -->
   <div class="container my-5">

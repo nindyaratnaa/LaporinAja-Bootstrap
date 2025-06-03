@@ -13,26 +13,44 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="Dashboard.html"><img src="../Assets/Images/img/nav-logo.png" alt="Logo" height="40"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a></li>
-            <li class="nav-item"><a class="nav-link" href="Rekap.html">Rekap</a></li>
-            <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
-          </ul>
-          <div>
-            <a class="btn btn-outline-light me-2" href="BuatAkun.html">Daftar</a>
-            <a class="btn btn-light" href="Masuk.html">Masuk</a>
-          </div>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand me-4" href="Dashboard.html">
+                <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Rekap.html">Rekap</a>                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li> -->
+                </ul>
+
+                <!-- <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="ms-auto rounded-circle"> -->
+                <div>
+        <a class="btn btn-outline-light me-2" href="BuatAkun.html">Daftar</a>
+        <a class="btn btn-light" href="Masuk.html">Masuk</a>
       </div>
+            </div>
+        </div>
     </nav>
 
+     <!-- <div>
+        <a class="btn btn-outline-light me-2" href="BuatAkun.html">Daftar</a>
+        <a class="btn btn-light" href="Masuk.html">Masuk</a>
+      </div> -->
     <!-- Hero Section -->
     <section class="text-center bg-dark text-white py-5">
       <div class="container">
@@ -43,38 +61,53 @@
     </section>
 
     <!-- Laporan Tuntas -->
-    <section class="py-5 bg-light">
+   <section class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center fw-bold mb-5" style="margin: 4rem;">Laporan Tuntas</h2>
-    <div id="laporanCarousel" class="carousel slide" style="margin-top: 4rem;" data-bs-ride="carousel">
+    <h2 class="text-center fw-bold mb-5">Laporan Tuntas</h2>
+    <div id="laporanCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
 
         <!-- Slide 1 -->
         <div class="carousel-item active">
-          <div class="d-flex justify-content-center">
-            <div class="card text-white bg-warning me-3" style="width: 18rem; border-radius: 20px;">
-              <img src="../Assets/Images/img/pohon-kiri.png" class="card-img-top" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
-              <div class="card-body">
+          <div class="d-flex justify-content-center ">
+            
+            <!-- Kartu 1 -->
+            <div class="card text-white bg-warning me-3" style="width: 18rem; border-radius: 20px; overflow: hidden;">
+              <img src="../Assets/Images/img/pohon-kiri.png" class="card-img-top mx-auto d-block " style="width: 70%; height: auto; margin-top: 20px;">
+              <div class="card-body text-center">
                 <h5 class="card-title">Lampu Merah Pejalan Kaki di Sumbersari Mati</h5>
                 <p class="card-text">Lampu merah pejalan kaki di Sumbersari tidak berfungsi. Kondisi ini membahayakan keselamatan pengguna jalan, terutama di jam padat.</p>
               </div>
             </div>
-            <div class="card text-white bg-danger me-3" style="width: 18rem; border-radius: 20px;">
-              <img src="../Assets/Images/img/img-trotoar-rusak.png" class="card-img-top" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
-              <div class="card-body">
+
+            <!-- Kartu 2 -->
+            <div class="card text-white bg-danger me-3" style="width: 18rem; border-radius: 20px; overflow: hidden;">
+              <img src="../Assets/Images/img/jalan-rusak-tengah.png" class="card-img-top mx-auto d-block " style="width: 70%; height: auto; margin-top: 20px;">
+              <div class="card-body text-center">
                 <h5 class="card-title">Trotoar Depan UB</h5>
                 <p class="card-text">Perbaikan trotoar di depan UB belum selesai. Warga berharap penyelesaian segera tuntas demi kenyamanan pejalan kaki.</p>
               </div>
             </div>
-            <div class="card text-white bg-warning" style="width: 18rem; border-radius: 20px;">
-              <img src="../Assets/Images/img/jalan-rusak-kanan.png" class="card-img-top" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
-              <div class="card-body">
+
+            <!-- Kartu 3 -->
+            <div class="card text-white bg-warning" style="width: 18rem; border-radius: 20px; overflow: hidden;">
+              <img src="../Assets/Images/img/jalan-rusak-kanan.png" class="card-img-top mx-auto d-block " style="width: 70%; height: auto; margin-top: 20px;">
+              <div class="card-body text-center">
                 <h5 class="card-title">Perbaikan Jalan Sumbersari</h5>
                 <p class="card-text">Proses perbaikan jalan telah selesai. Jalan yang rusak telah diperbaiki dan kembali layak digunakan.</p>
               </div>
             </div>
+
           </div>
         </div>
+
+        <!-- Tambahkan slide berikutnya jika perlu -->
+        
+      <!-- </div>
+    </div>
+  </div>
+</section> -->
+
 
         <!-- Tambahkan slide lain jika perlu -->
 
@@ -205,7 +238,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
 

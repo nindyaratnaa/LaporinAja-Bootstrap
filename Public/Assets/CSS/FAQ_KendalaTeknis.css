@@ -1,6 +1,6 @@
 body {
       background-color: var(--putih);
-      font-family: 'Segoe UI', sans-serif;
+      font-family: var(--body-base-font-family);      
     }
     .bg-dark-custom {
       background-color: var(--hijau-tua);
@@ -39,7 +39,7 @@ body {
       color: var(--hijau-muda); 
     }
 
-    .footer {
+    /* .footer {
       background-color: var(--hijau-tua);
       color: var(--putih);
     }
@@ -49,4 +49,4 @@ body {
     }
     .footer a:hover {
       text-decoration: underline;
-    }
+    } */

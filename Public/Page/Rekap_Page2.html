@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LaporinAja - Rekap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Custom Styles (Jika ada yang masih diperlukan) -->
+    <link rel="stylesheet" href="../Assets/CSS/Rekap_Cari.css" />
+    <link rel="stylesheet" href="../Assets/globals.css" />
+    <link rel="stylesheet" href="../Assets/styleguide.css" />
+  </head>
+  
+
+  <body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand me-4" href="Dashboard.html">
+                <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Rekap.html">Rekap</a>                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pengaturan.html">Pengaturan</a>
+                    </li>
+                </ul>
+
+                <a href="Profile.html" class="nav-link">
+                    <!-- Gambar hanya di layar besar -->
+                    <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
+                    <!-- Teks hanya di layar kecil -->
+                    <span class="d-block d-lg-none text-white">Profile</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mt-4">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Dashboard.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="Rekap.html">Rekap Laporan</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cari</li>
+            </ol>
+        </nav>
+
+        <!-- Filter Dropdown -->
+        <div class="row my-5">
+            <div class="col-md-3">
+            <label for="kecamatan" class="form-label mt-2">Kecamatan</label>
+            <select class="form-select shadow-sm" id="kecamatan">
+                <option selected>Pilih Kecamatan</option>
+                <option value="1">Lowokwaru</option>
+                <option value="2">Blimbing</option>
+                <option value="3">Klojen</option>
+                <option value="4">Sukun</option>
+                <option value="5">Kedung-Kandang</option>
+            </select>
+            </div>
+            
+            <div class="col-md-3">
+            <label for="desa" class="form-label mt-2">Desa/Kelurahan</label>
+            <select class="form-select shadow-sm" id="desa">
+                <option selected>Pilih Desa/Kelurahan</option>
+                <option value="5">Arjowinangun</option>
+                <option value="2">Arjosari</option>
+                <option value="4">Bakalan Krajan</option>
+                <option value="2">Balearjosari</option>
+                <option value="4">Bandulan</option>
+                <option value="4">Bandungrejosari</option>
+                <option value="3">Bareng</option>
+                <option value="2">Blimbing</option>
+                <option value="2">Bunulrejo</option>
+                <option value="5">Bumiayu</option>
+                <option value="5">Buring</option>
+                <option value="5">Cemorokandang</option>
+                <option value="4">Ciptomulyo</option>
+                <option value="1">Dinoyo</option>
+                <option value="3">Gadingsari</option>
+                <option value="4">Gadang</option>
+                <option value="3">Kauman</option>
+                <option value="3">Kasin</option>
+                <option value="4">Karangbesuki</option>
+                <option value="2">Kesatrian</option>
+                <option value="3">Kiduldalem</option>
+                <option value="3">Klojen</option>
+                <option value="5">Kotalama</option>
+                <option value="5">Kedungkandang</option>
+                <option value="4">Kebonsari</option>
+                <option value="1">Ketawanggede</option>
+                <option value="5">Lesanpuro</option>
+                <option value="1">Lowokwaru</option>
+                <option value="5">Madyopuro</option>
+                <option value="1">Merjosari</option>
+                <option value="5">Mergosono</option>
+                <option value="1">Mojolangu</option>
+                <option value="4">Mulyorejo</option>
+                <option value="3">Oro-Oro Dowo</option>
+                <option value="2">Pandanwangi</option>
+                <option value="3">Penanggungan</option>
+                <option value="4">Pisangcandi</option>
+                <option value="2">Polehan</option>
+                <option value="2">Polowijen</option>
+                <option value="2">Purwantoro</option>
+                <option value="2">Purwodadi</option>
+                <option value="3">Rampal Celaket</option>
+                <option value="3">Samaan</option>
+                <option value="5">Sawojajar</option>
+                <option value="1">Sumbersari</option>
+                <option value="4">Sukun</option>
+                <option value="1">Tasikmadu</option>
+                <option value="4">Tanjungrejo</option>
+                <option value="1">Tlogomas</option>
+                <option value="5">Tlogowaru</option>
+                <option value="1">Tulusrejo</option>
+                <option value="1">Tunggulwulung</option>
+                <option value="1">Tunjungsekar</option>
+                <option value="3">Sukoharjo</option>
+                <option value="2">Jodipan</option>
+                <option value="1">Jatimulyo</option>
+                <option value="5">Wonokoyo</option>
+            </select>
+            </div>
+            
+            <div class="col-md-2">
+            <label for="tahun" class="form-label mt-2">Tahun</label>
+            <select class="form-select shadow-sm" id="tahun">
+                <option selected>Pilih Tahun</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+            </div>
+
+            <div class="col-md-2">
+            <label for="kategori" class="form-label mt-2">Kategori</label>
+            <select class="form-select shadow-sm" id="kategori">
+                <option selected>Pilih Kategori</option>
+                <option value="Infrastruktur">Infrastruktur</option>
+                <option value="Pelayanan">Pelayanan Publik</option>
+                <option value="Korupsi">Korupsi & Penyalahgunaan Wewenang</option>
+                <option value="Keamanan">Keamanan & Kriminalitas</option>
+                <option value="Lingkungan">Lingkungan & Kebersihan</option>
+            </select>
+            </div>
+
+            <!-- Tombol Cari -->
+            <div class="col-md-2 d-flex align-items-end justify-content-right mt-3">
+            <button class="btn btn-primary w-100">
+                <img src="../assets/Images/svg/asset-cari.svg" alt="Cari" height="20"> Cari
+            </button>
+            </div>
+        </div>
+
+        <!-- Reports Grid -->
+        <div class="row">
+            <!-- Report 1 -->
+            <div class="col-md-6 col-lg-4">
+            <a href="Rekap_Banjir.html" class="text-decoration-none text-dark">
+                <div class="report-card p-3" style="height: 550px;">
+                <img src="../Assets/Images/img/img-1.png" class="img-fluid rounded-3" alt="Banjir di Jl. Soekarno Hatta">
+                <div class="report-card-body">
+                    <h5>Banjir di Suhat</h5>
+                    <h6 class="report-date">2 Mei 2026</h6>
+                    <p class="card-text">
+                    Pada hari Sabtu, 17 Mei 2026, sekitar pukul 15.00 WIB. Hujan turun cukup deras selama hampir dua jam
+                    tanpa henti yang menyebabkan genangan air mulai di beberapa titik jalan, ketinggiannya mencapai
+                    sekitar 30 hingga 50 cm...
+                    <span class="read-more">Read More</span>
+                    </p>
+                </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Report 2 -->        
+            <div class="col-md-6 col-lg-4">
+            <a href="Rekap_Trotoar.html" class="text-decoration-none text-dark">
+                <div class="report-card p-3" style="min-height: 550px;">
+                <img src="../Assets/Images/img/img-2.png" class="img-fluid rounded-3" alt="Banjir di Jl. Soekarno Hatta">
+                <div class="report-card-body">
+                    <h5>Trotoar Rusak di Jl. Ijen</h5>
+                    <h6 class="report-date">2 Mei 2026</h6>
+                    <p class="card-text">
+                    Beberapa laporan menyebutkan trotoar rusak di beberapa titik di Kota Malang, terutama di Jalan
+                    Kertanegara dekat Tugu Kota Malang menuju Stasiun Kota Baru, dan Jalan Ijen. Rusaknya trotoar
+                    disebabkan oleh berbagai faktor seperti akar pohon...
+                    <span class="read-more">Read More</span>
+                    </p>
+                </div>
+                </div>
+            </a>
+            </div>        
+
+            <!-- Report 3 -->        
+            <div class="col-md-6 col-lg-4">
+            <a href="Rekap_Sampah.html" class="text-decoration-none text-dark">
+                <div class="report-card p-3" style="min-height: 550px;">
+                <img src="../Assets/Images/img/img-3.png" class="img-fluid rounded-3" alt="Banjir di Jl. Soekarno Hatta">
+                <div class="report-card-body">
+                    <h5>Sampah Menumpuk</h5>
+                    <h6 class="report-date">2 Mei 2026</h6>
+                    <p class="card-text">
+                    Penumpukan sampah di pinggir jalan menjadi masalah umum di Malang, baik di perkotaan maupun pedesaan.
+                    Beberapa contoh kasus meliputi sampah menumpuk di jalan akses makam di Singosari, sampah medis yang
+                    dibuang sembarangan di pinggir jalan Kota Malang...
+                    <span class="read-more">Read More</span>
+                    </p>
+                </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Report 4 -->        
+            <div class="col-md-6 col-lg-4">
+            <a href="Rekap_Saluran.html" class="text-decoration-none text-dark">
+                <div class="report-card p-3" style="min-height: 550px;">
+                <img src="../Assets/Images/img/img-4.png" class="img-fluid rounded-3" alt="Banjir di Jl. Soekarno Hatta">
+                <div class="report-card-body">
+                    <h5>Saluran Air Tersumbat</h5>
+                    <h6 class="report-date">2 Mei 2026</h6>
+                    <p class="card-text">
+                    Ada sekitar 20 petugas gabungan dari Pemkot Malang yang turun langsung ke gorong-gorong untuk
+                    membersihkan sampah. Fokus pengerjaan berada di depan warung Sego Sambel Cak Uut
+                    Soehat. Wali Kota Malang Wahyu Hidayat turut memantau normalisasi tersebut...
+                    <span class="read-more">Read More</span>
+                    </p>
+                </div>
+                </div>
+            </a>
+            </div>        
+
+            <!-- Report 5 -->        
+            <div class="col-md-6 col-lg-4">
+            <a href="Rekap_Pohon.html" class="text-decoration-none text-dark">
+                <div class="report-card p-3" style="min-height: 550px;">
+                <img src="../Assets/Images/img/img-5.png" class="img-fluid rounded-3" alt="Banjir di Jl. Soekarno Hatta">
+                <div class="report-card-body">
+                    <h5>Pohon Rawan Tumbang</h5>
+                    <h6 class="report-date">2 Mei 2026</h6>
+                    <p class="card-text">
+                    Pohon rawan tumbang di Kota Malang, terutama di 15 titik yang sudah dipetakan oleh DLH Kota Malang.
+                    DLH Kota Malang Jatim Times telah mengidentifikasi wilayah-wilayah tersebut, seperti di Jl Mayjend
+                    Sungkono, Jl Raya Tlogomas, dan beberapa jalan lainnya...
+                    <span class="read-more">Read More</span>
+                    </p>
+                </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Report 6 -->        
+            <div class="col-md-6 col-lg-4">
+            <a href="Rekap_Rambu.html" class="text-decoration-none text-dark">
+                <div class="report-card p-3" style="min-height: 550px;">
+                <img src="../Assets/Images/img/img-6.png" class="img-fluid rounded-3" alt="Banjir di Jl. Soekarno Hatta">
+                <div class="report-card-body">
+                    <h5>Rambu Hilang</h5>
+                    <h6 class="report-date">2 Mei 2026</h6>
+                    <p class="card-text">
+                    Rambu lalu lintas yang hilang di Malang dapat menyebabkan berbagai masalah, terutama di area yang
+                    biasanya ramai dilalui. Beberapa contoh rambu yang hilang di Malang adalah rambu larangan di flyover
+                    Kotalama dan rambu di jembatan Tunggulmas...
+                    <span class="read-more">Read More</span>
+                    </p>
+                </div>
+                </div>
+            </a>
+            </div>        
+        </div>
+      
+        <!-- Pagination -->
+        <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="Rekap_Page1.html" tabindex="-1">Previous</a> <!-- Link ke halaman 1 -->
+            </li>
+            <li class="page-item"><a class="page-link" href="Rekap_Page1.html">1</a></li>
+            <li class="page-item active"><a class="page-link" href="Rekap_Page2.html">2</a></li> <!-- Aktif -->
+            <li class="page-item"><a class="page-link" href="Rekap_Page3.html">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="Rekap_page3.html">Next</a> <!-- Link ke halaman 3 -->
+            </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="../Assets/Images/img/logo-footer.png" alt="Logo Footer" class="mb-3" width="60">
+                    <p class="fw-bold">Ikuti Kami!</p>
+                    <div class="d-flex gap-3">
+                        <img src="../Assets/Images/svg/x-logo.svg" alt="X Logo" width="24" />
+                        <img src="../Assets/Images/svg/logo-instagram.svg" alt="Instagram" width="24" />
+                        <img src="../Assets/Images/svg/logo-youtube.svg" alt="YouTube" width="24" />
+                        <img src="../Assets/Images/svg/linkedin.svg" alt="LinkedIn" width="24" />
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold">Tentang Kami</h6>
+                    <ul class="list-unstyled small">
+                        <li>Profil Laporin Aja</li>
+                        <li>Karier</li>
+                        <li>Keamanan</li>
+                        <li>Hubungi kami</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold">Tautan Lainnya</h6>
+                    <ul class="list-unstyled small">
+                        <li>Situs Resmi Pemkot Malang</li>
+                        <li>Data Terbuka Kota Malang</li>
+                        <li>PLN Pengaduan Malang</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="text-center small">© 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang<br/>Dikelola oleh DPUPR Kota Malang | Terintegrasi dengan SIPPD Nasional</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

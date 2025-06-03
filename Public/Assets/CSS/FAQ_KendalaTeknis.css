@@ -1,16 +1,16 @@
 body {
-      background-color: #F8F7F5;
+      background-color: var(--putih);
       font-family: 'Segoe UI', sans-serif;
     }
     .bg-dark-custom {
-      background-color: #2C3333;
+      background-color: var(--hijau-tua);
     }
     .icon-circle {
       font-size: 1.4rem;
       margin-right: 0.5rem;
     }
     .faq-box {
-      background-color: #FFBE55;
+      background-color: var(--kuning-muda);
       border-radius: 1rem;
       padding: 2rem;
     }
@@ -21,9 +21,9 @@ body {
       justify-content: space-between;
       align-items: center;
     }
-    .faq-box p i {
+    /* .faq-box p i {
       color: #333;
-    }
+    } */
     .faq-item a {
       color: inherit;
       text-decoration: none;
@@ -36,15 +36,15 @@ body {
     .faq-item:hover span,
     .faq-item:hover a,
     .faq-item:hover i {
-      color: #7C8282; 
+      color: var(--hijau-muda); 
     }
 
     .footer {
-      background-color: #2C3333;
-      color: white;
+      background-color: var(--hijau-tua);
+      color: var(--putih);
     }
     .footer a {
-      color: white;
+      color: var(--putih);
       text-decoration: none;
     }
     .footer a:hover {

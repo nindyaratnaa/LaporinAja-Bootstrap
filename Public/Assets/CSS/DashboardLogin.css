@@ -84,7 +84,7 @@ body {
 }
 
 .laporan-red {
-  background-color: #b0323a;
+  background-color: var(--merah);
 }
 
 .laporan-yellow {

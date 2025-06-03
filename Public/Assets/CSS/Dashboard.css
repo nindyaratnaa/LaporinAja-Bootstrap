@@ -161,3 +161,10 @@ footer .social-icons i {
     margin-right: 1rem;
   }
 }
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}

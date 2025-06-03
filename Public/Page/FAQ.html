@@ -7,94 +7,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="../Assets/CSS/Profile.css"/>
+  <link rel="stylesheet" href="../Assets/CSS/FAQ.css"/>
   <link rel="stylesheet" href="../Assets/globals.css" />
   <link rel="stylesheet" href="../Assets/styleguide.css" />
-
-  <style>
-    body {
-      background-color: #F8F7F5;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .bg-dark-custom {
-      background-color: #2C3333;
-    }
-    .faq-title {
-      font-weight: 700;
-      font-size: 2.5rem;
-      color: white;
-    }
-    .search-box {
-      border-radius: 1rem;
-      padding: 0.6rem 1.2rem;
-      background: #D9D9D9;
-    }
-    .card-faq {
-      background-color: #FDBD3D;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      height: 100%;
-      cursor: pointer;
-    }
-    .card-faq h5 {
-      font-weight: 700;
-    }
-
-    .icon-kategori {
-      width: 1.8rem;  
-      height: auto;
-      margin-right: 0.5rem;
-      vertical-align: middle;
-    }
-
-    .footer {
-      background-color: #2C3333;
-      color: white;
-    }
-    .footer a {
-      color: white;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-    .icon-circle {
-      font-size: 1.4rem;
-      margin-right: 0.5rem;
-    }
-    .list-group-item {
-      cursor: pointer;
-    }
-
-    /* Timeline Style for Steps */
-    .faq-step {
-      position: relative;
-      padding-left: 2.5rem;
-      margin-bottom: 2rem;
-    }
-    .faq-step i {
-      position: absolute;
-      left: 0;
-      top: 0.15rem;
-      background-color: #FDBD3D;
-      color: white;
-      border-radius: 50%;
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-    .faq-step::before {
-      content: "";
-      position: absolute;
-      left: 0.75rem;
-      top: 2rem;
-      height: 100%;
-      width: 2px;
-      background-color: #FDBD3D;
-    }
-    .faq-step:last-child::before {
-      display: none;
-    }
-  </style>
 </head>
 
 <body>
@@ -112,7 +27,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../Page/AjukanLaporan.html">Ajukan Laporan</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Page/LaporAjukan.html">Ajukan Laporan</a></li>
           <li class="nav-item"><a class="nav-link" href="../Page/Rekap.html">Rekap</a></li>
           <li class="nav-item"><a class="nav-link" href="../Page/FAQ.html">FAQ</a></li>
           <li class="nav-item"><a class="nav-link" href="../Page/Pengaturan.html">Pengaturan</a></li>
@@ -142,106 +57,148 @@
    
   <section class="py-5">
     <div class="container">
-      <!-- <div class="bg-white p-4 shadow rounded-4 mb-5">
-        <h4 class="fw-bold mb-4">Langkah Melapor</h4>
-        <div class="faq-step">
-          <i class="fas fa-pen"></i>
-          <div><strong>Langkah 1:</strong> Klik menu "Ajukan Laporan"</div>
-        </div>
-        <div class="faq-step">
-          <i class="fas fa-edit"></i>
-          <div><strong>Langkah 2:</strong> Isi formulir laporan sesuai kategori</div>
-        </div>
-        <div class="faq-step">
-          <i class="fas fa-paper-plane"></i>
-          <div><strong>Langkah 3:</strong> Kirim laporan dan tunggu notifikasi status</div>
-        </div>
-      </div> -->
-
       <!-- FAQ Terbaru -->
       <div class="bg-white p-4 shadow rounded-4 mb-5">
         <h4 class="fw-bold mb-4">Terbaru</h4>
         <ul class="list-group list-group-flush" id="faqList">
-          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='faq-detail1.html'">Bagaimana cara melapor di Laporin Aja? <i class="fas fa-chevron-right"></i></li>
-          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='faq-detail2.html'">Apakah laporan bisa dikirim secara anonim? <i class="fas fa-chevron-right"></i></li>
-          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='FAQ_JenisPermasalahan.html'">Apa saja jenis laporan yang bisa saya buat? <i class="fas fa-chevron-right"></i></li>
-          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='faq-detail4.html'">Berapa lama laporan diproses? <i class="fas fa-chevron-right"></i></li>
-          <li class="list-group-item d-flex justify-content-between faq-item" onclick="location.href='faq-detail5.html'">Bagaimana cara cek status laporan saya? <i class="fas fa-chevron-right"></i></li>
+          <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-decoration-none">
+            Bagaimana cara melapor di Laporin Aja? <i class="fas fa-chevron-right"></i>
+          </a>
+          <a href="faq-detail2.html" class="list-group-item d-flex justify-content-between align-items-center text-decoration-none">
+            Apakah laporan bisa dikirim secara anonim? <i class="fas fa-chevron-right"></i>
+          </a>
+          <a href="FAQ_JenisPermasalahan.html" class="list-group-item d-flex justify-content-between align-items-center text-decoration-none">
+            Apa saja jenis permasalahan yang dapat dilaporkan? <i class="fas fa-chevron-right"></i>
+          </a>
+          <a href="faq-detail4.html" class="list-group-item d-flex justify-content-between align-items-center text-decoration-none">
+            Berapa lama laporan diproses? <i class="fas fa-chevron-right"></i>
+          </a>
+          <a href="faq-detail5.html" class="list-group-item d-flex justify-content-between align-items-center text-decoration-none">
+            Bagaimana cara cek status laporan saya? <i class="fas fa-chevron-right"></i>
+          </a>
         </ul>
       </div>
 
       <!-- Kategori FAQ -->
       <div class="row g-4">
         <div class="col-md-6 col-lg-4">
-          <div class="card-faq" onclick="location.href='FAQ_TentangLayanan.html'">
-            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-tentang-layanan.svg"> Tentang layanan</h5>
-            <ul class="mt-3">
-              <li>Tujuan platform ini <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Layanan bagi pengguna <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Akses 24 jam? <i class="fas fa-chevron-right float-end"></i></li>
-            </ul>
-            <p class="mt-3">6 Pertanyaan lainnya</p>
-          </div>
+          <a href="FAQ_TentangLayanan.html" class="text-decoration-none text-dark">
+            <div class="card-faq hover-shadow">
+              <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-tentang-layanan.svg"> Tentang layanan</h5>
+                <ul class="mt-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apa tujuan utama dari platform ini dibuat? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Layanan apa saja yang tersedia bagi pengguna? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apakah platform ini dapat diakses selama 24 jam? <i class="fas fa-chevron-right"></i>
+                  </li>
+                </ul>
+              <p>6 Pertanyaan lainnya</p>
+            </div>
+          </a>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <div class="card-faq" onclick="location.href='FAQ_ProsesPengaduan.html'">
-            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-pengaduan.svg"> Proses pengaduan</h5>
-            <ul class="mt-3">
-              <li>Prosedur mengajukan pengaduan <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Jenis masalah yang bisa dilaporkan <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Pihak yang menangani laporan <i class="fas fa-chevron-right float-end"></i></li>
-            </ul>
-            <p class="mt-3">9 Pertanyaan lainnya</p>
-          </div>
+          <a href="FAQ_ProsesPengaduan.html" class="text-decoration-none text-dark">
+            <div class="card-faq hover-shadow">
+              <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-pengaduan.svg"> Proses pengaduan</h5>
+                <ul class="mt-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Bagaimana prosedur untuk mengajukan pengaduan melalui platform ini? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apa saja jenis permasalahan yang dapat dilaporkan? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Siapa yang berwenang menindaklanjuti laporan yang masuk? <i class="fas fa-chevron-right"></i>
+                  </li>
+                </ul>
+              <p>9 Pertanyaan lainnya</p>
+            </div>
+          </a>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <div class="card-faq" onclick="location.href='FAQ_KendalaTeknis.html'">
-            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-kendala-teknis.svg"> Kendala teknis</h5>
-            <ul class="mt-3">
-              <li>Platform tidak dapat diakses <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Bug atau kesalahan teknis <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Bantuan mengisi formulir <i class="fas fa-chevron-right float-end"></i></li>
-            </ul>
-            <p class="mt-3">6 Pertanyaan lainnya</p>
-          </div>
+          <a href="FAQ_KendalaTeknis.html" class="text-decoration-none text-dark">
+            <div class="card-faq hover-shadow">
+              <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-kendala-teknis.svg"> Kendala teknis</h5>
+                <ul class="mt-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apa yang harus dilakukan jika platform tidak dapat diakses? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Bagaimana melaporkan bug atau kesalahan teknis yang ditemukan? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apakah tersedia bantuan jika terjadi masalah saat mengisi formulir? <i class="fas fa-chevron-right"></i>
+                  </li>
+                </ul>
+              <p>6 Pertanyaan lainnya</p>
+            </div>
+          </a>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <div class="card-faq" onclick="location.href='FAQ_CaraLapor.html'">
-            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-cara-melapor.svg"> Cara Melapor</h5>
-            <ul class="mt-3">
-              <li>Langkah pertama membuat laporan <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Informasi yang perlu disertakan <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Setelah laporan dikirim <i class="fas fa-chevron-right float-end"></i></li>
-            </ul>
-            <p class="mt-3">6 Pertanyaan lainnya</p>
-          </div>
+          <a href="FAQ_CaraLapor.html" class="text-decoration-none text-dark">
+            <div class="card-faq hover-shadow">
+              <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-cara-melapor.svg"> Cara Melapor</h5>
+                <ul class="mt-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apa langkah pertama yang harus dilakukan untuk membuat laporan? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Informasi apa saja yang perlu disertakan dalam laporan? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apa yang terjadi setelah laporan dikirimkan? <i class="fas fa-chevron-right"></i>
+                  </li>
+                </ul>
+              <p>6 Pertanyaan lainnya</p>
+            </div>
+          </a>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <div class="card-faq" onclick="location.href='FAQ_PrivasiPengguna.html'">
-            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-privasi.svg"> Privasi pengguna</h5>
-            <ul class="mt-3">
-              <li>Informasi yang dikumpulkan <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Kegunaan data pengguna <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Pembagian data ke pihak ketiga <i class="fas fa-chevron-right float-end"></i></li>
-            </ul>
-            <p class="mt-3">6 Pertanyaan lainnya</p>
-          </div>
+          <a href="FAQ_PrivasiPengguna.html" class="text-decoration-none text-dark">
+            <div class="card-faq hover-shadow">
+              <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-privasi.svg"> Privasi pengguna</h5>
+                <ul class="mt-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Informasi pribadi apa saja yang dikumpulkan oleh platform ini? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Untuk keperluan apa data pengguna digunakan? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apakah data pengguna akan dibagikan kepada pihak ketiga? <i class="fas fa-chevron-right"></i>
+                  </li>
+                </ul>
+              <p>6 Pertanyaan lainnya</p>
+            </div>
+          </a>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <div class="card-faq" onclick="location.href='FAQ_TanggungJawab.html'">
-            <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-tanggungjawab.svg"> Tanggung jawab kami</h5>
-            <ul class="mt-3">
-              <li>Tindakan atas laporan palsu <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Tanggung jawab kebocoran data <i class="fas fa-chevron-right float-end"></i></li>
-              <li>Menangani keluhan pengguna <i class="fas fa-chevron-right float-end"></i></li>
-            </ul>
-            <p class="mt-3">6 Pertanyaan lainnya</p>
-          </div>
+          <a href="FAQ_TanggungJawab.html" class="text-decoration-none text-dark">
+            <div class="card-faq hover-shadow">
+              <h5><img class="icon-kategori" src="../Assets/Images/svg/icon-tanggungjawab.svg"> Tanggung jawab kami</h5>
+              <ul class="mt-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Apa tindakan yang dilakukan jika laporan terbukti palsu? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Siapa yang bertanggung jawab jika terjadi kebocoran data? <i class="fas fa-chevron-right"></i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Bagaimana penyelenggara menangani keluhan terhadap layanan platform? <i class="fas fa-chevron-right"></i>
+                  </li>
+                </ul>
+              <p>6 Pertanyaan lainnya</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -283,7 +240,6 @@
       <p class="text-center small">© 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang<br/>Dikelola oleh DPUPR Kota Malang | Terintegrasi dengan SIPPD Nasional</p>
     </div>
   </footer>
-
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById('faqSearch');
@@ -303,6 +259,6 @@
     });
   });
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

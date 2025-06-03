@@ -17,7 +17,7 @@
       <a class="navbar-brand me-4" href="Dashboard.html">
         <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40" />
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -29,23 +29,21 @@
           <li class="nav-item"><a class="nav-link" href="Pengaturan.html">Pengaturan</a></li>
         </ul>
         <a href="Profile.html" class="nav-link">
-          <!-- Gambar hanya di layar besar -->
           <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
-          <!-- Teks hanya di layar kecil -->
           <span class="d-block d-lg-none text-white">Profile</span>
         </a>
       </div>
     </div>
   </nav>
 
-<!-- Main Content -->
+  <!-- Main Content -->
   <div class="container my-5">
     <div class="card shadow-lg rounded custom-card">
       <div class="card-header text-white text-center py-3 custom-card-header">
         <h2 class="mb-0">Sampaikan Laporan Anda</h2>
       </div>
       <div class="card-body p-4">
-        <form>
+        <form id="laporForm">
           <div class="form-group mb-3">
             <label for="kategori">Pilih Kategori Laporan</label>
             <select class="form-control" id="kategori">
@@ -95,44 +93,43 @@
       </div>
     </div>
   </div>
-  
-   <section class="steps-section">
-  <div class="container">
-    <div class="steps-wrapper position-relative">
-      <div class="timeline-line"></div> <!-- Garis horizontal -->
 
-      <div class="step">
-        <div class="step-icon bg-dark">
-          <img src="../assets/images/svg/pensil-ajuan (1).svg" alt="Page" width="27" class="me-1">      
+  <!-- Steps Section -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="steps-wrapper position-relative">
+        <div class="timeline-line"></div>
+        <div class="step">
+          <div class="step-icon bg-dark">
+            <img src="../assets/images/svg/pensil-ajuan (1).svg" alt="Page" width="27" class="me-1">      
+          </div>
+          <h5>Tulis Laporan</h5>
+          <p>Laporkan keluhan atau aspirasi anda dengan jelas dan lengkap</p>
         </div>
-        <h5>Tulis Laporan</h5>
-        <p>Laporkan keluhan atau aspirasi anda dengan jelas dan lengkap</p>
-      </div>
-      <div class="step">
-        <div class="step-icon bg-light">
-          <img src="../assets/images/svg/buku-ajuan.svg" alt="Page" width="27" class="me-1">
+        <div class="step">
+          <div class="step-icon bg-light">
+            <img src="../assets/images/svg/buku-ajuan.svg" alt="Page" width="27" class="me-1">
+          </div>
+          <h5>Proses Verifikasi</h5>
+          <p>Dalam 3 hari, laporan Anda akan diverifikasi dan diteruskan kepada instansi berwenang</p>
         </div>
-        <h5>Proses Verifikasi</h5>
-        <p>Dalam 3 hari, laporan Anda akan diverifikasi dan diteruskan kepada instansi berwenang</p>
-      </div>
-      <div class="step">
-        <div class="step-icon bg-light">
-          <img src="../assets/images/svg/streak.svg" alt="Page" width="27" class="me-1">
+        <div class="step">
+          <div class="step-icon bg-light">
+            <img src="../assets/images/svg/streak.svg" alt="Page" width="27" class="me-1">
+          </div>
+          <h5>Proses Tindak Lanjut</h5>
+          <p>Dalam 5 hari, instansi akan menindaklanjuti dan membalas laporan Anda</p>
         </div>
-        <h5>Proses Tindak Lanjut</h5>
-        <p>Dalam 5 hari, instansi akan menindaklanjuti dan membalas laporan Anda</p>
-      </div>
-      <div class="step">
-        <div class="step-icon bg-light">
-          <img src="../assets/images/svg/checklist-ajuan.svg" alt="Page" width="27" class="me-1">
+        <div class="step">
+          <div class="step-icon bg-light">
+            <img src="../assets/images/svg/checklist-ajuan.svg" alt="Page" width="27" class="me-1">
+          </div>
+          <h5>Selesai</h5>
+          <p>Laporan Anda akan terus ditindaklanjuti hingga terselesaikan</p>
         </div>
-        <h5>Selesai</h5>
-        <p>Laporan Anda akan terus ditindaklanjuti hingga terselesaikan</p>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white pt-4 pb-3">
@@ -178,5 +175,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script Submit Alert -->
+  <script>
+    document.getElementById("laporForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Hindari reload halaman
+      alert("Terima kasih, laporan Anda telah dikirim!");
+    });
+  </script>
 </body>
 </html>

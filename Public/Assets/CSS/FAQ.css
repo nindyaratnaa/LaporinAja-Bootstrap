@@ -28,7 +28,7 @@
     }
 
     .card-faq {
-      background-color: #FFBE55;
+      background-color: var(--kuning-muda);
       border-radius: 1rem;
       padding: 1.5rem;
       height: 100%;

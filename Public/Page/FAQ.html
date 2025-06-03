@@ -13,32 +13,44 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
-    <div class="container-fluid">
-      <a class="navbar-brand me-4" href="#">
-        <a href="../Page/Dashboard.html" class="nav-link">
-          <span class="d-block d-lg-none text-white"></span>
-          <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40">
-        </a>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../Page/LaporAjukan.html">Ajukan Laporan</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Page/Rekap.html">Rekap</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Page/FAQ.html">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Page/Pengaturan.html">Pengaturan</a></li>
-        </ul>
-        <a href="../Page/Profile.html" class="nav-link">
-          <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
-          <span class="d-block d-lg-none text-white">Profile</span>
-        </a>
-      </div>
-    </div>
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand me-4" href="DashboardLogin.html">
+                <img src="../Assets/Images/img/nav-logo.png" alt="Logo" width="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Rekap.html">Rekap</a>                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pengaturan.html">Pengaturan</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li> -->
+                </ul>
+
+                <!-- <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="ms-auto rounded-circle"> -->
+                <a href="Profile.html" class="nav-link">
+                    <!-- Gambar hanya di layar besar -->
+                    <img src="../Assets/Images/img/nav-mega.png" alt="Profile" width="40" class="rounded-circle d-none d-lg-block">
+                    <!-- Teks hanya di layar kecil -->
+                    <span class="d-block d-lg-none text-white">Profile</span>
+                </a>
+            </div>
+        </div>
+    </nav>
 
   <!-- Hero Section -->
   <section class="bg-dark-custom text-center py-5">
@@ -240,6 +252,7 @@
       <p class="text-center small">© 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang<br/>Dikelola oleh DPUPR Kota Malang | Terintegrasi dengan SIPPD Nasional</p>
     </div>
   </footer>
+  
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById('faqSearch');

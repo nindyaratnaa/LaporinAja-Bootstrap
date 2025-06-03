@@ -20,7 +20,6 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="LaporAjukan.html">Ajukan Laporan</a></li>
@@ -47,47 +46,119 @@
           <div class="form-group mb-3">
             <label for="kategori">Pilih Kategori Laporan</label>
             <select class="form-control" id="kategori">
-              <option disabled selected>Kategori Laporan</option>
-              <option>...</option>
+              <option selected>Pilih Kategori</option>
+              <option value="Infrastruktur">Infrastruktur</option>
+              <option value="Pelayanan">Pelayanan Publik</option>
+              <option value="Korupsi">Korupsi & Penyalahgunaan Wewenang</option>
+              <option value="Keamanan">Keamanan & Kriminalitas</option>
+              <option value="Lingkungan">Lingkungan & Kebersihan</option>
             </select>
           </div>
+
           <div class="form-group mb-3">
             <label for="judul">Judul Laporan</label>
             <input type="text" class="form-control" id="judul" placeholder="Masukkan judul laporan"/>
           </div>
+
           <div class="form-group mb-3">
             <label for="deskripsi">Deskripsi Laporan</label>
             <textarea class="form-control" id="deskripsi" rows="4" placeholder="Deskripsikan laporan Anda secara lengkap dan jelas"></textarea>
           </div>
+
           <div class="form-group mb-3">
             <label for="tanggal">Tanggal Laporan</label>
             <input type="date" class="form-control" id="tanggal"/>
           </div>
+
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="kecamatan">Pilih Kecamatan</label>
               <select class="form-control" id="kecamatan">
-                <option disabled selected>Pilih Kecamatan</option>
-                <option>...</option>
+                <option selected>Pilih Kecamatan</option>
+                <option value="1">Lowokwaru</option>
+                <option value="2">Blimbing</option>
+                <option value="3">Klojen</option>
+                <option value="4">Sukun</option>
+                <option value="5">Kedung-Kandang</option>
               </select>
             </div>
+
             <div class="col-md-6 mb-3">
               <label for="kelurahan">Pilih Kelurahan/Desa</label>
               <select class="form-control" id="kelurahan">
-                <option disabled selected>Pilih Kelurahan/Desa</option>
-                <option>...</option>
+                <option selected>Pilih Desa/Kelurahan</option>
+                <option value="5">Arjowinangun</option>
+                <option value="2">Arjosari</option>
+                <option value="4">Bakalan Krajan</option>
+                <option value="2">Balearjosari</option>
+                <option value="4">Bandulan</option>
+                <option value="4">Bandungrejosari</option>
+                <option value="3">Bareng</option>
+                <option value="2">Blimbing</option>
+                <option value="2">Bunulrejo</option>
+                <option value="5">Bumiayu</option>
+                <option value="5">Buring</option>
+                <option value="5">Cemorokandang</option>
+                <option value="4">Ciptomulyo</option>
+                <option value="1">Dinoyo</option>
+                <option value="3">Gadingsari</option>
+                <option value="4">Gadang</option>
+                <option value="3">Kauman</option>
+                <option value="3">Kasin</option>
+                <option value="4">Karangbesuki</option>
+                <option value="2">Kesatrian</option>
+                <option value="3">Kiduldalem</option>
+                <option value="3">Klojen</option>
+                <option value="5">Kotalama</option>
+                <option value="5">Kedungkandang</option>
+                <option value="4">Kebonsari</option>
+                <option value="1">Ketawanggede</option>
+                <option value="5">Lesanpuro</option>
+                <option value="1">Lowokwaru</option>
+                <option value="5">Madyopuro</option>
+                <option value="1">Merjosari</option>
+                <option value="5">Mergosono</option>
+                <option value="1">Mojolangu</option>
+                <option value="4">Mulyorejo</option>
+                <option value="3">Oro-Oro Dowo</option>
+                <option value="2">Pandanwangi</option>
+                <option value="3">Penanggungan</option>
+                <option value="4">Pisangcandi</option>
+                <option value="2">Polehan</option>
+                <option value="2">Polowijen</option>
+                <option value="2">Purwantoro</option>
+                <option value="2">Purwodadi</option>
+                <option value="3">Rampal Celaket</option>
+                <option value="3">Samaan</option>
+                <option value="5">Sawojajar</option>
+                <option value="1">Sumbersari</option>
+                <option value="4">Sukun</option>
+                <option value="1">Tasikmadu</option>
+                <option value="4">Tanjungrejo</option>
+                <option value="1">Tlogomas</option>
+                <option value="5">Tlogowaru</option>
+                <option value="1">Tulusrejo</option>
+                <option value="1">Tunggulwulung</option>
+                <option value="1">Tunjungsekar</option>
+                <option value="3">Sukoharjo</option>
+                <option value="2">Jodipan</option>
+                <option value="1">Jatimulyo</option>
+                <option value="5">Wonokoyo</option>
               </select>
             </div>
           </div>
+
           <div class="form-group mb-3">
             <label for="bukti">Unggah Bukti Laporan</label>
             <input type="file" class="form-control-file" id="bukti"/>
             <small class="form-text text-muted">Taruh atau Unggah Bukti Laporan di sini</small>
           </div>
+
           <div class="form-check mb-4">
             <input type="checkbox" class="form-check-input" id="rahasia"/>
             <label class="form-check-label" for="rahasia">Tandai sebagai laporan rahasia</label>
           </div>
+
           <button type="submit" class="btn btn-custom w-100 py-2">Lapor</button>
         </form>
       </div>
@@ -99,30 +170,34 @@
     <div class="container">
       <div class="steps-wrapper position-relative">
         <div class="timeline-line"></div>
+
         <div class="step">
           <div class="step-icon bg-dark">
-            <img src="../assets/images/svg/pensil-ajuan (1).svg" alt="Page" width="27" class="me-1">      
+            <img src="../assets/images/svg/pensil-ajuan (1).svg" alt="Page" width="27" class="me-1"/>      
           </div>
           <h5>Tulis Laporan</h5>
           <p>Laporkan keluhan atau aspirasi anda dengan jelas dan lengkap</p>
         </div>
+
         <div class="step">
           <div class="step-icon bg-light">
-            <img src="../assets/images/svg/buku-ajuan.svg" alt="Page" width="27" class="me-1">
+            <img src="../assets/images/svg/buku-ajuan.svg" alt="Page" width="27" class="me-1"/>
           </div>
           <h5>Proses Verifikasi</h5>
           <p>Dalam 3 hari, laporan Anda akan diverifikasi dan diteruskan kepada instansi berwenang</p>
         </div>
+
         <div class="step">
           <div class="step-icon bg-light">
-            <img src="../assets/images/svg/streak.svg" alt="Page" width="27" class="me-1">
+            <img src="../assets/images/svg/streak.svg" alt="Page" width="27" class="me-1"/>
           </div>
           <h5>Proses Tindak Lanjut</h5>
           <p>Dalam 5 hari, instansi akan menindaklanjuti dan membalas laporan Anda</p>
         </div>
+
         <div class="step">
           <div class="step-icon bg-light">
-            <img src="../assets/images/svg/checklist-ajuan.svg" alt="Page" width="27" class="me-1">
+            <img src="../assets/images/svg/checklist-ajuan.svg" alt="Page" width="27" class="me-1"/>
           </div>
           <h5>Selesai</h5>
           <p>Laporan Anda akan terus ditindaklanjuti hingga terselesaikan</p>
@@ -136,15 +211,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-3">
-          <img src="../Assets/Images/img/logo-footer.png" alt="Logo Footer" class="mb-3" width="60">
+          <img src="../Assets/Images/img/logo-footer.png" alt="Logo Footer" class="mb-3" width="60"/>
           <p class="fw-bold">Ikuti Kami!</p>
           <div class="d-flex gap-3">
-            <img src="../Assets/Images/svg/x-logo.svg" alt="X Logo" width="24" />
-            <img src="../Assets/Images/svg/logo-instagram.svg" alt="Instagram" width="24" />
-            <img src="../Assets/Images/svg/logo-youtube.svg" alt="YouTube" width="24" />
-            <img src="../Assets/Images/svg/linkedin.svg" alt="LinkedIn" width="24" />
+            <img src="../Assets/Images/svg/x-logo.svg" alt="X Logo" width="24"/>
+            <img src="../Assets/Images/svg/logo-instagram.svg" alt="Instagram" width="24"/>
+            <img src="../Assets/Images/svg/logo-youtube.svg" alt="YouTube" width="24"/>
+            <img src="../Assets/Images/svg/linkedin.svg" alt="LinkedIn" width="24"/>
           </div>
         </div>
+
         <div class="col-md-4 mb-3">
           <h6 class="fw-bold">Tentang Kami</h6>
           <ul class="list-unstyled small">
@@ -154,6 +230,7 @@
             <li>Hubungi kami</li>
           </ul>
         </div>
+
         <div class="col-md-4 mb-3">
           <h6 class="fw-bold">Tautan Lainnya</h6>
           <ul class="list-unstyled small">
@@ -163,9 +240,9 @@
           </ul>
         </div>
       </div>
-      <hr class="bg-light" />
+      <hr class="bg-light"/>
       <p class="text-center small">
-        © 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang<br />
+        © 2026 Laporin Aja – Sistem Pengaduan Publik Kota Malang<br/>
         Dikelola oleh DPUPR Kota Malang | Terintegrasi dengan SIPPD Nasional
       </p>
     </div>
@@ -180,7 +257,7 @@
   <!-- Script Submit Alert -->
   <script>
     document.getElementById("laporForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Hindari reload halaman
+      event.preventDefault();
       alert("Terima kasih, laporan Anda telah dikirim!");
     });
   </script>

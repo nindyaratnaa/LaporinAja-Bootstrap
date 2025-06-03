@@ -1,23 +1,26 @@
-/* ============ Custom Styles for Laporin Aja ============ */
 body {
-  background-color: #FFFCF5;
+  background-color: var(--putih);
+  font-family: var(--body-base-font-family);
+  font-weight: var(--body-base-font-weight);
+  font-size: var(--body-base-font-size);
+  line-height: var(--body-base-line-height);
 }
 
 .custom-card-header {
-  background-color: #B0323A;
+  background-color: var(--merah);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  margin-bottom: 25px; /* Added margin */
+  margin-bottom: 25px;
 }
 
 .btn-custom {
-  background-color: #2B3537;
-  border-color: #2B3537;
+  background-color: var(--hijau-tua);
+  border-color: var(--hijau-tua);
   color: white;
-  font-weight: 600;
+  font-weight: var(--body-strong-font-weight);
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  margin-top: 25px; /* Added margin */
+  margin-top: 25px;
 }
 
 .btn-custom:hover {
@@ -30,24 +33,26 @@ body {
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-  margin: 30px auto; /* Added margin */
+  margin: 30px auto;
 }
 
 .form-group label {
-  font-weight: 600;
-  margin-bottom: 10px; /* Added margin */
+  font-weight: var(--body-strong-font-weight);
+  margin-bottom: 10px;
 }
 
 input[type="text"],
 input[type="date"],
 select,
 textarea {
-  border-radius: 8px;
+  border-radius: var(--size-radius-200);
   border: 1px solid #ced4da;
-  padding: 12px; /* Slightly increased padding */
+  padding: 12px;
   width: 100%;
-  margin-bottom: 20px; /* Fixed and increased margin */
+  margin-bottom: 20px;
   transition: border-color 0.3s ease;
+  font-family: var(--body-base-font-family);
+  font-weight: var(--body-base-font-weight);
 }
 
 input[type="text"]:focus,
@@ -60,18 +65,18 @@ textarea:focus {
 
 textarea {
   resize: none;
-  min-height: 120px; /* Added minimum height */
-  margin-bottom: 20px; /* Consistent margin */
+  min-height: 120px;
+  margin-bottom: 20px;
 }
 
 .btn-danger {
   background-color: #dc3545;
   border-color: #dc3545;
-  font-weight: 600;
+  font-weight: var(--body-strong-font-weight);
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: var(--size-radius-200);
   transition: background-color 0.3s ease;
-  margin-top: 20px; /* Added margin */
+  margin-top: 20px;
 }
 
 .btn-danger:hover {
@@ -79,18 +84,25 @@ textarea {
   border-color: #bd2130;
 }
 
+/* ================== Steps Section ================== */
+.steps-section {
+  background-color: var(--krem-muda); 
+  padding: 60px 20px;
+}
+
 .steps-wrapper {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 30px;
   text-align: center;
   padding-top: 30px;
 }
 
 .timeline-line {
   position: absolute;
-  top: 65px; /* sejajarkan dengan tengah ikon */
+  top: 65px;
   left: 10%;
   right: 10%;
   height: 2px;
@@ -100,7 +112,7 @@ textarea {
 
 .step {
   position: relative;
-  z-index: 2; /* agar ikon muncul di atas garis */
+  z-index: 2;
   flex: 1;
   max-width: 220px;
 }
@@ -114,53 +126,23 @@ textarea {
   align-items: center;
   justify-content: center;
   font-size: 28px;
-  color: #fff;
-  background-color: #e5e5e5;
-}
-
-
-/* ================== Steps Section ================== */
-.steps-section {
-  background-color: #fef8ef;
-  padding: 60px 20px;
-}
-
-.steps-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
-  text-align: center;
-}
-
-.step {
-  max-width: 220px;
-  flex: 1;
-}
-
-.step-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  color: #fff;
+  color: #E3E3E3; 
 }
 
 .step-icon.bg-dark {
-  background-color: #212529;
+  background-color: var(--hijau-tua);
+  color: var(--putih); 
 }
 
 .step-icon.bg-light {
-  background-color: #e5e5e5;
-  color: #212529;
+  background-color: #e0e0e0 !important; 
+  color: #333 !important;
 }
 
+
+
 .step h5 {
-  font-weight: bold;
+  font-weight: var(--body-strong-font-weight);
   margin-bottom: 10px;
 }
 
@@ -168,4 +150,3 @@ textarea {
   font-size: 0.95rem;
   color: #555;
 }
-

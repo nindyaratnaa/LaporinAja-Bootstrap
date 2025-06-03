@@ -24,6 +24,21 @@ body {
     .faq-box p i {
       color: #333;
     }
+    .faq-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .faq-item {
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .faq-item:hover span,
+    .faq-item:hover a,
+    .faq-item:hover i {
+      color: #7C8282; 
+    }
+
     .footer {
       background-color: #2C3333;
       color: white;
@@ -33,5 +48,5 @@ body {
       text-decoration: none;
     }
     .footer a:hover {
-      text-decoration: under
+      text-decoration: underline;
     }

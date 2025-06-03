@@ -1,6 +1,6 @@
 body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: var(--body-base-font-family);
       background-color: var(--putih);
       color: #333;
     }
@@ -91,7 +91,7 @@ body {
 
   /* Feedback box style */
   .faq-feedback-box {
-    background-color: var(--putih); /* Box besar */
+    background-color: #dfdfdf; /* Box besar */
     border-radius: 16px;
     padding: 32px 20px;
     margin-top: 40px;

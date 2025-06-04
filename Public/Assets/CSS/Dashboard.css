@@ -1,6 +1,6 @@
 /* Reset and base */
 body {
-  background-color: #fffcf5;
+  background-color: var(--putih);
   font-family: 'Poppins', sans-serif;
 }
 

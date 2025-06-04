@@ -7,6 +7,13 @@
   background-color: var(--kuning-muda);
   }
 
+  .report-card:hover {
+    background-color: var(--kuning-muda);
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
   .report-card img {
   height: 233px;
   object-fit: cover;
@@ -19,7 +26,6 @@
   margin-right: 4px;
   margin-bottom: 10px;
   }
-
 
   .read-more {
   color: #838383;

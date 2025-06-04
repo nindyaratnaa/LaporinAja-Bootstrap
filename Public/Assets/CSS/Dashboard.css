@@ -92,6 +92,22 @@ body {
   color: #1e1e1e !important;
 }
 
+.card-body{
+  margin-left: 4px;
+  /* margin-top: 3px; */
+  margin-right: 4px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.card h5 {
+  font-weight: 700;
+  text-align: center;
+}
+
 /* Announcement Section */
 .announcement-block {
   padding: 30px 20px;
@@ -140,14 +156,14 @@ footer .social-icons i {
 }
 
 /* Navigation */
-.navbar-brand img {
+/* .navbar-brand img {
   height: 40px;
 }
 
 .navbar .btn {
   font-size: 14px;
   padding: 6px 12px;
-}
+} */
 
 @media (max-width: 768px) {
   .laporan-cards-wrapper {
